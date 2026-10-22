@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Agua Peñasco</title>
+  <meta name="description" content="Mapa comunitario para reportar y ver en qué colonias de Puerto Peñasco falta el agua.">
+  <meta name="theme-color" content="#256abf">
+  <!-- Vista previa al compartir el enlace en Facebook o WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="Agua Peñasco">
+  <meta property="og:description" content="¿En tu colonia no hay agua? Repórtalo en un minuto y mira en el mapa dónde y desde cuándo falta en Puerto Peñasco.">
+  <meta property="og:url" content="https://jmemijeabadi.github.io/agua-penasco/">
+  <meta property="og:image" content="https://jmemijeabadi.github.io/agua-penasco/img/vista-previa.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23256abf' d='M12 2.5C9.4 6 5.5 10.5 5.5 14.5a6.5 6.5 0 0 0 13 0c0-4-3.9-8.5-6.5-12z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-gota" viewBox="0 0 24 24"><path d="M12 2.5C9.4 6 5.5 10.5 5.5 14.5a6.5 6.5 0 0 0 13 0c0-4-3.9-8.5-6.5-12z"/></symbol>
+    <symbol id="i-sin-agua" viewBox="0 0 24 24"><path d="M12 3.2C9.6 6.5 6 10.7 6 14.5a6 6 0 0 0 12 0c0-3.8-3.6-8-6-11.3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M4.5 4.5l15 15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-poca" viewBox="0 0 24 24"><path d="M12 3.2C9.6 6.5 6 10.7 6 14.5a6 6 0 0 0 12 0c0-3.8-3.6-8-6-11.3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M7.4 16.5h9.2a5 5 0 0 1-9.2 0z"/></symbol>
+    <symbol id="i-sucia" viewBox="0 0 24 24"><path d="M12 3.2C9.6 6.5 6 10.7 6 14.5a6 6 0 0 0 12 0c0-3.8-3.6-8-6-11.3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="10" cy="12.8" r="1.3"/><circle cx="14.2" cy="15" r="1.3"/><circle cx="10.6" cy="17.3" r="1.3"/></symbol>
+    <symbol id="i-fuga" viewBox="0 0 24 24"><path d="M2 12h8.3l1.7 2 1.7-2H22v6H2z"/><path d="M12 9.5V4M8.8 10.2 6 6.8M15.2 10.2 18 6.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-regreso" viewBox="0 0 24 24"><path d="M12 3.2C9.6 6.5 6 10.7 6 14.5a6 6 0 0 0 12 0c0-3.8-3.6-8-6-11.3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.2 14.6l2 2 3.8-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-ubicacion" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+    <symbol id="i-mas" viewBox="0 0 24 24"><path d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6z"/></symbol>
+    <symbol id="i-cerrar" viewBox="0 0 24 24"><path d="M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6L6.4 19 5 17.6 10.6 12 5 6.4z"/></symbol>
+    <symbol id="i-atras" viewBox="0 0 24 24"><path d="M15.4 5 8.4 12l7 7 1.4-1.4-5.6-5.6 5.6-5.6z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></symbol>
+    <symbol id="i-pausa" viewBox="0 0 24 24"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></symbol>
+    <symbol id="i-compartir" viewBox="0 0 24 24"><path d="M18 16a3 3 0 0 0-2.4 1.2l-6.7-3.4a3 3 0 0 0 0-1.6l6.7-3.4A3 3 0 1 0 15 7c0 .3 0 .5.1.8L8.4 11.2a3 3 0 1 0 0 3.6l6.7 3.4A3 3 0 1 0 18 16z"/></symbol>
+    <symbol id="i-descargar" viewBox="0 0 24 24"><path d="M11 4h2v8.2l3.3-3.3 1.4 1.4L12 16l-5.7-5.7 1.4-1.4 3.3 3.3zM5 18h14v2H5z"/></symbol>
+    <symbol id="i-copiar" viewBox="0 0 24 24"><path d="M8 3h11a2 2 0 0 1 2 2v11h-2V5H8zM5 7h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2zm0 2v10h10V9z"/></symbol>
+  </svg>
+
+  <header class="barra">
+    <div class="marca">
+      <svg class="logo" aria-hidden="true"><use href="#i-gota"/></svg>
+      <div>
+        <h1>Agua Peñasco</h1>
+        <p>Reportes ciudadanos de agua por colonia · Puerto Peñasco, Son.</p>
+      </div>
+    </div>
+    <button type="button" class="btn-primario" id="btn-reportar">
+      <svg class="ico" aria-hidden="true"><use href="#i-mas"/></svg>Reportar
+    </button>
+  </header>
+
+  <div class="aviso" id="aviso-ejemplo" hidden>
+    <span>Estás viendo <strong>datos de ejemplo</strong> para probar la herramienta. No son reportes reales.</span>
+    <button type="button" class="btn-texto" id="btn-borrar-ejemplo">Borrar ejemplos</button>
+  </div>
+  <div class="aviso" id="aviso-conexion" role="status" hidden></div>
+
+  <main class="disposicion">
+    <section class="zona-mapa" aria-label="Mapa">
+      <div id="mapa"></div>
+      <div class="filtros">
+        <div class="segmentado" role="group" aria-label="Qué mostrar en el mapa">
+          <button type="button" data-modo="ahora" aria-pressed="true">Últimas 24 h</button>
+          <button type="button" data-modo="dia" aria-pressed="false">Día por día</button>
+          <button type="button" data-modo="acumulado" aria-pressed="false">30 días</button>
+        </div>
+      </div>
+      <details class="leyenda" id="leyenda" open>
+        <summary>Qué significan los colores</summary>
+        <div class="contenido" id="leyenda-contenido"></div>
+      </details>
+      <div class="barra-dia" id="barra-dia" hidden>
+        <button type="button" class="btn-icono" id="btn-reproducir" aria-label="Reproducir los últimos 30 días">
+          <svg class="ico" aria-hidden="true"><use href="#i-play"/></svg>
+        </button>
+        <input type="range" id="control-dia" min="0" max="29" step="1" value="29" aria-label="Día">
+        <output id="etiqueta-dia" for="control-dia"></output>
+      </div>
+      <div class="aviso-elegir" id="aviso-elegir" hidden>
+        <span id="texto-elegir">Toca el mapa donde está el problema</span>
+        <button type="button" id="btn-cancelar-elegir">Cancelar</button>
+      </div>
+    </section>
+
+    <aside class="panel">
+      <nav class="pestanas" role="tablist" aria-label="Secciones">
+        <button type="button" role="tab" id="tab-colonias" aria-controls="pestana-colonias" aria-selected="true">Colonias</button>
+        <button type="button" role="tab" id="tab-historial" aria-controls="pestana-historial" aria-selected="false">Historial</button>
+        <button type="button" role="tab" id="tab-importar" aria-controls="pestana-importar" aria-selected="false">Importar<span class="largo"> de Facebook</span></button>
+        <button type="button" role="tab" id="tab-acerca" aria-controls="pestana-acerca" aria-selected="false">Acerca</button>
+      </nav>
+
+      <section class="pestana" id="pestana-colonias" role="tabpanel" aria-labelledby="tab-colonias">
+        <div id="vista-lista" class="pestana" style="padding:0">
+          <div class="cifras" id="cifras"></div>
+          <div class="encabezado-lista">
+            <h2 id="titulo-lista">Colonias con reportes</h2>
+          </div>
+          <input type="search" id="buscar-colonia" placeholder="Buscar colonia" aria-label="Buscar colonia">
+          <ul class="lista-colonias" id="lista-colonias"></ul>
+          <details class="sin-reportes" id="sin-reportes">
+            <summary></summary>
+            <ul></ul>
+          </details>
+        </div>
+        <div id="vista-detalle" class="pestana" style="padding:0" hidden></div>
+      </section>
+
+      <section class="pestana" id="pestana-historial" role="tabpanel" aria-labelledby="tab-historial" hidden>
+        <h2>Reportes de falta de agua por día</h2>
+        <p class="sub">Toda la ciudad, últimos 30 días. Toca un día para verlo en el mapa.</p>
+        <div class="leyenda-linea">
+          <span><span class="muestra" style="background:var(--critico)"></span>Sin agua</span>
+          <span><span class="muestra" style="background:var(--alerta)"></span>Poca presión</span>
+        </div>
+        <div class="grafica" id="grafica-dias"></div>
+        <details>
+          <summary>Ver como tabla</summary>
+          <div class="tabla-envoltura" id="tabla-dias"></div>
+        </details>
+
+        <h2>Colonias con más días sin agua</h2>
+        <p class="sub">Días con al menos un reporte de “no hay agua”, últimos 30 días.</p>
+        <div class="ranking" id="ranking"></div>
+
+        <h2>Compartir y descargar</h2>
+        <div class="botones">
+          <button type="button" class="btn-secundario" id="btn-copiar-resumen">
+            <svg class="ico" aria-hidden="true"><use href="#i-copiar"/></svg>Copiar resumen para Facebook o WhatsApp
+          </button>
+          <button type="button" class="btn-secundario" id="btn-csv">
+            <svg class="ico" aria-hidden="true"><use href="#i-descargar"/></svg>Descargar datos (CSV)
+          </button>
+        </div>
+        <p class="nota">El resumen se puede publicar en los grupos de la colonia. El CSV abre en Excel y sirve como evidencia para presentar al organismo del agua, a regidores o a medios.</p>
+      </section>
+
+      <section class="pestana" id="pestana-importar" role="tabpanel" aria-labelledby="tab-importar" hidden>
+        <h2>Importar quejas de Facebook o WhatsApp</h2>
+        <p class="sub">Copia publicaciones o comentarios de los grupos (o un chat exportado de WhatsApp) y pégalos aquí. La app busca la colonia, el problema y la fecha. <strong>No se guardan nombres ni el texto</strong>: solo colonia, problema y fecha.</p>
+        <textarea id="texto-importar" rows="9" placeholder="Ejemplo:&#10;Ana López&#10;En la Obrera no hay agua desde ayer&#10;3 h&#10;Me gusta  Responder&#10;Pedro&#10;Nueva Esperanza igual&#10;1 h"></textarea>
+        <div class="campo-linea">
+          <label for="fecha-importar">Si el texto no trae fecha, usar:</label>
+          <select id="fecha-importar">
+            <option value="hoy">Hoy</option>
+            <option value="ayer">Ayer</option>
+            <option value="otra">Otra fecha…</option>
+          </select>
+          <input type="date" id="fecha-importar-otra" aria-label="Fecha" hidden>
+        </div>
+        <div class="botones">
+          <button type="button" class="btn-primario" id="btn-analizar">Buscar reportes en el texto</button>
+        </div>
+        <div class="resultado-importar" id="resultado-importar" aria-live="polite"></div>
+      </section>
+
+      <section class="pestana" id="pestana-acerca" role="tabpanel" aria-labelledby="tab-acerca" hidden>
+        <h2>¿Qué es esto?</h2>
+        <p>Una herramienta <strong>comunitaria y no oficial</strong> para que los vecinos de Puerto Peñasco reporten cuando no hay agua, y que todos veamos en un mapa dónde y desde cuándo falta. No sustituye el reporte al organismo operador del agua: lo complementa con un historial público que se puede mostrar a las autoridades.</p>
+        <h2>Cómo se pinta el mapa</h2>
+        <p>Cada colonia toma el color de sus reportes recientes. Si alguien reporta que “ya regresó el agua”, los reportes anteriores de esa colonia se cierran. Una zona gris no significa que haya agua: significa que nadie ha reportado.</p>
+        <p class="nota">Cada hexágono toma la colonia del límite oficial que lo contiene (cartografía del INE o localidades del INEGI); si no hay, la que declaran sus negocios en el DENUE, y si tampoco, la colonia más cercana sin pasar de su tamaño. Son zonas aproximadas de unos 300 m. Donde casi todos los negocios usan otro nombre que el oficial (por ejemplo “Oriente”), el mapa sigue a la gente.</p>
+        <h2>Privacidad</h2>
+        <p>Los reportes son anónimos. No se piden nombres ni teléfonos, y la ubicación del GPS se redondea a unos 100 m para no señalar una casa. Para frenar abusos, cada teléfono manda además un número al azar que no dice quién eres y que no se muestra a nadie.</p>
+
+        <h2>Colonias del mapa</h2>
+        <p class="sub" id="resumen-colonias"></p>
+        <div class="campo">
+          <label for="elegir-colonia-ubicar">Ubicar una colonia</label>
+          <select id="elegir-colonia-ubicar"></select>
+        </div>
+        <div class="botones">
+          <button type="button" class="btn-secundario" id="btn-ubicar-colonia">
+            <svg class="ico" aria-hidden="true"><use href="#i-ubicacion"/></svg>Tocar su centro en el mapa
+          </button>
+          <button type="button" class="btn-secundario" id="btn-nueva-colonia">
+            <svg class="ico" aria-hidden="true"><use href="#i-mas"/></svg>Falta una colonia
+          </button>
+        </div>
+        <ul class="lista-editor" id="cambios-colonias"></ul>
+        <div class="botones">
+          <button type="button" class="btn-texto" id="btn-descargar-colonias">
+            <svg class="ico" aria-hidden="true"><use href="#i-descargar"/></svg>Descargar colonias.js actualizado
+          </button>
+        </div>
+        <p class="nota">Lo que ubiques aquí se guarda en este navegador. Para que lo vea todo el mundo, reemplaza <code>js/colonias.js</code> con el archivo descargado. En las colonias con límite oficial, el punto solo cambia dónde va su nombre: tócalo dentro de su zona.</p>
+      </section>
+
+      <p class="pie-panel"><span id="pie-modo">Versión de prueba: los reportes se guardan solo en este dispositivo.</span> Mapa: © colaboradores de OpenStreetMap. Colonias: SEPOMEX, INE e INEGI.</p>
+    </aside>
+  </main>
+
+  <dialog id="dialogo-reporte" aria-labelledby="titulo-reporte">
+    <form id="form-reporte" method="dialog" novalidate>
+      <div class="dialogo-cabeza">
+        <h2 id="titulo-reporte">Reportar</h2>
+        <button type="button" class="btn-icono" data-cerrar aria-label="Cerrar">
+          <svg class="ico" aria-hidden="true"><use href="#i-cerrar"/></svg>
+        </button>
+      </div>
+
+      <fieldset class="opciones-tipo" id="opciones-tipo">
+        <legend>¿Qué está pasando?</legend>
+      </fieldset>
+
+      <div class="campo">
+        <label for="campo-colonia">¿En qué colonia?</label>
+        <input id="campo-colonia" name="colonia" list="lista-nombres-colonias" autocomplete="off" placeholder="Escribe o elige tu colonia">
+        <datalist id="lista-nombres-colonias"></datalist>
+        <div class="acciones-ubicacion">
+          <button type="button" class="btn-secundario" id="btn-mi-ubicacion">
+            <svg class="ico" aria-hidden="true"><use href="#i-ubicacion"/></svg>Usar mi ubicación
+          </button>
+          <button type="button" class="btn-secundario" id="btn-elegir-en-mapa">Elegir en el mapa</button>
+        </div>
+        <p class="nota" id="nota-ubicacion" aria-live="polite"></p>
+      </div>
+
+      <fieldset class="campo" id="grupo-desde">
+        <legend>¿Desde cuándo?</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="desde" value="0">Hoy</label>
+          <label class="chip"><input type="radio" name="desde" value="1">Ayer</label>
+          <label class="chip"><input type="radio" name="desde" value="2">2 o 3 días</label>
+          <label class="chip"><input type="radio" name="desde" value="4">Más de 3 días</label>
+        </div>
+      </fieldset>
+
+      <div class="campo">
+        <label for="campo-comentario">Comentario <span class="opcional">(opcional)</span></label>
+        <textarea id="campo-comentario" name="comentario" maxlength="200" rows="2" placeholder="Ej.: desde la mañana no cae nada"></textarea>
+        <p class="nota">No escribas nombres, teléfonos ni tu dirección. Los reportes son públicos y anónimos.</p>
+      </div>
+
+      <p class="error" id="error-reporte" role="alert"></p>
+      <div class="dialogo-pie">
+        <button type="button" class="btn-secundario" data-cerrar>Cancelar</button>
+        <button type="submit" class="btn-primario">Enviar reporte</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="aviso-flotante" id="aviso-flotante" role="status" aria-live="polite"></div>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="js/zonas.js"></script>
+  <script src="js/mapa-base.js"></script>
+  <script src="js/colonias.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/geo.js"></script>
+  <script src="js/almacen.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/estado.js"></script>
+  <script src="js/detector.js"></script>
+  <script src="js/fondo.js"></script>
+  <script src="js/mapa.js"></script>
+  <script src="js/graficas.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

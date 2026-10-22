@@ -1,0 +1,1740 @@
+{
+ "nota": "Notas de la investigación de dónde está cada colonia (octubre de 2026): fuentes consultadas y revisión de un segundo investigador. Sirven para auditar o corregir js/colonias.js.",
+ "colonias": [
+  {
+   "nombre": "4 de Marzo",
+   "lat": 31.3547,
+   "lng": -113.5467,
+   "radio": 380,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Aproximados. Al sur: Calle 50 (Quincuagésima) / Quincuagésima Primera, lat ~31.352, donde empieza Nueva Esperanza. Al norte: calles Tiburón/Gorrión, lat ~31.3568, donde empieza Brisas del Mar. Al poniente: Calle Porfirio Álvarez Barnett / Derecho de Vía, lng ~-113.550. Al oriente: prolongación norte de Av. Constitución, lng ~-113.5422. Calles internas: Génesis, Tiburón, Prolongación B, Gustavo Sotelo y Ulises Irigoyen.",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "13 negocios: '4 DE MARZO' (4) y 'COLONIA 4 DE MARZO' (9). Doce forman un núcleo compacto en la AGEB urbana 3450, manzanas 002 a 035 (centro 31.3545,-113.5474; radio80 de 235 m). Entre ellos: Abarrotes 33 y Abarrotes Gael (Calle Tiburón entre Gustavo Sotelo y Porfirio Álvarez Barnett), Tortillería Cristy y Dogos Hamburguesas (Calle Génesis entre Gustavo Sotelo y Ulises Irigoyen), Abarrotes Tina (entre Prolongación B y Gustavo Sotelo) e iglesias sobre Ulises Irigoyen. A eso se suma la Iglesia San Miguel Arcángel (Calle Quincuagésima entre Constitución y Ulises Irigoyen). Descarté un negocio de pesca con domicilio en Av. 14 (31.3123,-113.5445): está en la zona Benito Juárez/Ferrocarrilera, donde 70 negocios declaran otras colonias.",
+     "url": null
+    },
+    {
+     "tipo": "INEGI Marco Geoestadístico (dic. 2025) y Censo 2020",
+     "detalle": "Los negocios de 4 de Marzo caen en las manzanas del sur de la AGEB 2604800013450, que va de lat 31.3520 a 31.3657 y de lng -113.5532 a -113.5422. Las 22 manzanas al sur de lat ~31.357 suman 537 habitantes y 160 viviendas habitadas, en una caja de lat 31.3520 a 31.3572 y lng -113.5504 a -113.5422. Son la base del centro y del radio.",
+     "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/agebu/2604800013450"
+    },
+    {
+     "tipo": "INEGI manzanas (servicio wscatgeo)",
+     "detalle": "Polígonos y población 2020 de las manzanas del municipio. Con ellos vinculé las claves de manzana del DENUE con su ubicación.",
+     "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mza/26/048"
+    },
+    {
+     "tipo": "SEPOMEX (vía micodigopostal.org)",
+     "detalle": "Aparece como '4 de Marzo', Colonia, CP 83556, zona urbana. Comparte CP con las colonias del norte: Nueva Esperanza, Brisas del Mar y Lomas Campestres.",
+     "url": "https://micodigopostal.org/codigo-postal/83556/"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "No tiene nodo ni calles con el nombre de la colonia. Las calles sin nombre trazadas entre Calle 50 y lat ~31.357 (de Porfirio Álvarez Barnett a Constitución) coinciden con las manzanas del INEGI.",
+     "url": null
+    },
+    {
+     "tipo": "Búsqueda web",
+     "detalle": "Busqué 'colonia 4 de Marzo' Puerto Peñasco junto con OOMAPAS, escuelas, regularización y Rocky Point Times. Solo salieron listados de códigos postales y una colonia del mismo nombre en Los Cabos (BCS). El cupo de búsquedas web del flujo se agotó antes de hallar otra fuente con calles.",
+     "url": null
+    }
+   ],
+   "notaVerificador": "Intenté demostrar que el punto está mal y no lo logré. (1) DENUE: a 300 m del punto hay 12 negocios; 10 declaran 4 de Marzo y 2 Brisas del Mar, que es la colonia vecina del norte. En la AGEB 3450 solo se declaran 4 de Marzo (manzanas 002 a 035) y Brisas del Mar. (2) Fuente independiente nueva: la capa oficial COLONIA de la cartografía electoral del INE (WMS de cartografia.ine.mx, pedida como KML) tiene un polígono '4 DE MARZO' de 18 ha. Va de lat 31.3532 a 31.3557 y de lng -113.5504 a -113.5422. Límites: Calle 52 al sur, el borde sur de Calle Tiburón/Águila al norte, Calle Derecho de Vía (6ta)"
+  },
+  {
+   "nombre": "Bahía la Choya",
+   "lat": 31.3409,
+   "lng": -113.6325,
+   "radio": 1600,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Poblado aparte, ~9–10 km al oeste del centro, en la Punta y Bahía de La Choya. Calle principal: Calle F, que bordea la bahía desde la punta (Punta Caballo, ≈-113.643) hasta la entrada del pueblo (≈-113.617). Calles con letras (A–K) y con nombres marinos (Tiburón, Mantarraya, Calamar, Arrecife, La Ballena). Al norte, la bahía y el estero de La Choya; al sur, el Cerro La Choya y el desierto. Mide ~2.6 km de este a oeste y ~1.1 km de norte a sur.",
+   "fuentes": [
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Nodo place=village 'Bahía La Choya' en 31.34164,-113.63584, nodo natural=bay 'Bahía la Choya', Cerro La Choya e iglesia St. Joseph en Calle F. Red de calles del pueblo: 31.3354–31.3456 de latitud y -113.6429 a -113.6168 de longitud; centroide 31.34092,-113.63248, con el 95 % de las calles a menos de 1,275 m.",
+     "url": "https://www.openstreetmap.org/node/6140939865"
+    },
+    {
+     "tipo": "DENUE INEGI (abril 2026, datos locales)",
+     "detalle": "13 negocios 'CHOYA'/'LA CHOYA' sobre Calle F (subdelegación de policía, iglesia, tiendas, restaurantes, club náutico). Mediana: 31.33902,-113.62611. Se descarta la 'Gasolinera La Choya' del entronque con Costa Diamante (31.33076,-113.56755), a ~6 km.",
+     "url": "https://www.inegi.org.mx/app/mapa/denue/"
+    },
+    {
+     "tipo": "Web: micodigopostal.org (mapa)",
+     "detalle": "Bahía la Choya, pueblo rural, CP 83560; pin en 31.33794,-113.62939.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/bahia-la-choya/"
+    },
+    {
+     "tipo": "Web: directorio de localidades (datos INEGI)",
+     "detalle": "Localidad 'Bahía La Choya': 132 habitantes y 50 viviendas habitadas (INEGI 2020), a ~9.7 km en línea recta al oeste de Puerto Peñasco. Antes se llamaba La Choya.",
+     "url": "https://mexico.pueblosamerica.com/i/bahia-la-choya/"
+    }
+   ],
+   "notaVerificador": "Dentro de 300 m, los 4 negocios del DENUE declaran Choya o La Choya. Evidencia independiente: (1) El Marco Geoestadístico 2024 del INEGI tiene la localidad 'Bahía la Choya' (260480004). Su polígono mide 112.6 ha, va de 31.3348 a 31.3462 y de -113.6439 a -113.6155, y su centroide (31.34076,-113.63152) está a 94 m del punto. (2) El punto de localidad del INEGI (31.34165,-113.63513) registra 132 habitantes y 50 viviendas, lo que confirma la cifra que se citó de pueblosamerica. (3) El polígono 'La Choya' de Wikimapia tiene su centro a 210 m. Comprobé el nodo OSM (alt_name Cholla Bay) y el pin de m"
+  },
+  {
+   "nombre": "Bella Vista",
+   "lat": 31.3175,
+   "lng": -113.549,
+   "radio": 900,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "corregida",
+   "limites": "Polígono INE alargado de unas 263 ha. Al oriente, Av. Plutarco Elías Calles (límite con Ferrocarrilero), desde el Recinto Portuario/Sexta Zona Naval (sur, 31.306) hasta Calle 26. De ahí sigue hacia el norte por Crescencio Rejón (-113.5505) hasta Av. 32, camino a La Choya (norte, 31.332). Al poniente llega hasta el Centro de Convenciones/Expocenter (-113.566) y por la costa hasta Sonoran Sky. Al sur y al poniente está la playa (Playa Hermosa y Playa Bonita). Incluye Calle Oscar Palacios Madueño, Blvd. Paseo Balboa, las calles 13 a 25 al poniente de Plutarco Elías Calles, Av. Emilio Portes Gil y el tramo oriente del Blvd. Costero 2000. Los condominios de Sandy Beach (Puerta Privada, Las Palomas, Princesa, etc.) son polígonos aparte.",
+   "fuentes": [
+    {
+     "tipo": "cartografia-oficial",
+     "detalle": "INE, capa COLONIA: polígono BELLA VISTA de 263 ha, centroide 31.32311,-113.55469; el 80 % del área queda a menos de 1065 m. Contiene Sonoran Star, el acceso público a playa 2, Playa Bonita, el Centro de Convenciones y la Sexta Zona Naval.",
+     "url": "https://cartografia.ine.mx/wms/index?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=COLONIA&STYLES=&SRS=EPSG:4326&BBOX=-113.70,31.24,-113.40,31.45&WIDTH=3000&HEIGHT=2100&FORMAT=application/vnd.google-earth.kml%2Bxml"
+    },
+    {
+     "tipo": "sitio-desarrollo",
+     "detalle": "Sonoran Star Resort: C. Oscar Palacios Madueño, Bella Vista, Puerto Peñasco 83555. Su oficina de ventas, en C. 18 y Plutarco Elías Calles, está en Colonia Ferrocarrilera.",
+     "url": "https://sonoranstar.com/"
+    },
+    {
+     "tipo": "directorio",
+     "detalle": "Acceso a playa pública 2: dirección Bella Vista, 83555; coordenadas 31.3123388,-113.5478549.",
+     "url": "https://sierratours.com.mx/o16821-acceso-a-playa-publica-2/"
+    },
+    {
+     "tipo": "anuncio-inmobiliario",
+     "detalle": "MLS 26-736 'M134 L12 Av. E Portes Gil, Bella Vista' en 31.32123,-113.548676; MLS 26-426 y 26-148 'M151B L1 Col Bella Vista' en 31.3197,-113.5496; condominios 'Bella Vista' (MLS 26-16, 26-52, 26-53, 26-58, 26-59) en 31.3221,-113.5483.",
+     "url": "https://www.playasonorarealty.com/property/26-736/"
+    },
+    {
+     "tipo": "anuncio-inmobiliario",
+     "detalle": "Terrenos en COL. BELLA VISTA, AV CRECENSIO (Crescencio Rejón), CP 83555.",
+     "url": "https://seaconchas.com/propiedades/bellavista-crecensio-sandybeach/"
+    },
+    {
+     "tipo": "perfil-estadistico",
+     "detalle": "MarketDataMéxico: unas 92 ha, poca población y actividad principalmente de gobierno, lo que encaja con la Sexta Zona Naval dentro del polígono.",
+     "url": "https://www.marketdatamexico.com/es/article/Colonia-Bella-Vista-Puerto-Penasco-Sonora"
+    },
+    {
+     "tipo": "denue",
+     "detalle": "44 de los 64 negocios con colonia FERROCARRIL PLAYAS caen dentro del polígono (entre ellos GYM CONDOMINIOS BELLA VISTA, 31.32210,-113.54855); los demás están sobre Plutarco Elías Calles o al oriente. 2 de los 3 negocios de PLAYA BONITA están dentro; el tercero parece mal ubicado.",
+     "url": null
+    }
+   ],
+   "notaVerificador": "El polígono y la identificación son correctos, pero el punto no representa la colonia. El centroide del polígono del INE (263 ha, en forma de L) cae en terreno vacío junto al Blvd. Costero 2000. Ahí están las manzanas de INEGI de 112 y 35 ha, sin ningún habitante en el Censo 2020, y la prueba 'cerca 300' da 0 negocios. Todas las fuentes con coordenadas caen en la franja oriente, entre Av. Plutarco Elías Calles y la playa (Calles 13 a 26, Oscar Palacios Madueño, Portes Gil, Crescencio Rejón, Paseo Balboa y Playa Bonita): el Censo 2020 (las 46 viviendas habitadas), la mediana de los negocios del"
+  },
+  {
+   "nombre": "Benito Juárez",
+   "lat": 31.3042,
+   "lng": -113.5388,
+   "radio": 950,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Núcleo: la cuadrícula al sur del Blvd. Fremont, con calles que llevan nombres de estados (Campeche, Coahuila, Colima, Chiapas, Chihuahua, Durango, Guanajuato, Jalisco, Sinaloa, Morelos, Nayarit, Nuevo León) y transversales Ignacio Ramírez, Manuel Arista, Andrés Quintana Roo, Primo de Verdad, Mier y Terán, Ramos Arizpe y Plan de Ayutla. Límites: al oeste, Blvd. Benito Juárez/Av. Campeche y la Cuesta del Agua (con El Puerto/Recinto Portuario); al este, Av. Nuevo León; al sur, la playa (Calle Mariano Matamoros, zona Playa Mirador). Al norte de Fremont el DENUE la extiende entre Blvd. Benito Juárez/Av. Luis Encinas Johnson y Av. Sinaloa hasta la vía del tren/Calle De las Margaritas. Al oeste de Constitución llega hasta Calle De las Rosas (Palacio Municipal, Casa de Cultura, Secundaria Técnica, Hospital Naval, Capitanía de Puerto). Al noreste colinda con Fracc. Peñasco y El Cárcamo (Av. Sinaloa). También hay negocios con este nombre en las Calles 13 y 14 (zona del malecón), mezclados con 'Ferrocarril'; quedan fuera del radio.",
+   "fuentes": [
+    {
+     "tipo": "DENUE INEGI (abril 2026, datos locales)",
+     "detalle": "254 negocios con 'BENITO JUAREZ'/'BENITO JUÁREZ' (AGEB 1191, 1153, 1219, 1204 y 2325). Reparto: 72 al sur de Fremont, 65 sobre Fremont, 58 al norte de Fremont hasta De las Rosas y 58 en las Calles 13 y 14, donde se mezclan con 47 'FERROCARRIL'. Mediana: 31.30613,-113.54047. Además, 27 negocios 'MIRADOR'/'EL MIRADOR' en Matamoros, Plan de Ayutla y Ramos Arizpe, dentro de la misma cuadrícula y junto a hoteles que se declaran Benito Juárez (Costa Elegante, Blue Point, Casa Victoria).",
+     "url": "https://www.inegi.org.mx/app/mapa/denue/"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Nodo place=suburb 'Benito Juárez' en 31.30374,-113.53724, al sur de Fremont entre Chihuahua y Durango.",
+     "url": "https://www.openstreetmap.org/node/11463541094"
+    },
+    {
+     "tipo": "Web: micodigopostal.org (mapa de la colonia)",
+     "detalle": "Pin de la colonia Benito Juárez, CP 83554, en 31.30418,-113.53499 (Guanajuato/Jalisco, al sur de Fremont). Queda a ~220 m del nodo de OSM.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/benito-juarez/"
+    },
+    {
+     "tipo": "Web: sitios de viajes",
+     "detalle": "Travelocity/Hotels.com ubican el Hotel El Mirador (Av. Matamoros 140-B) en 'Puerto Peñasco (Benito Juárez)'. Playa Inn tiene la dirección 'Avenida Sinaloa 062 Benito Juárez'. Expedia pone el Hotel Plaza Peñasco (Av. Sinaloa entre Mier y Terán, que se anuncia como 'Colonia El Mirador') en el barrio Benito Juárez.",
+     "url": "https://www.travelocity.com/Puerto-Penasco-Hotels-Hotel-El-Mirador.h114153417.Hotel-Reviews"
+    },
+    {
+     "tipo": "OpenStreetMap (dirección)",
+     "detalle": "The Cove at Whale Hill, Calle Plan de Ayutla 92, con addr:postcode 83554 (el CP de Benito Juárez), en la zona Mirador.",
+     "url": "https://www.openstreetmap.org/node/9779474827"
+    },
+    {
+     "tipo": "Web: anuncios inmobiliarios (descartados)",
+     "detalle": "Inmuebles24 llama 'Benito Juárez' a una zona amplia: incluye casas en Lucero Viuda de Morúa y en No Reelección/Rodolfo Campodónico, lejos de la colonia. No se usó para ubicarla.",
+     "url": "https://www.inmuebles24.com/casas-en-benito-juarez-ciudad-de-puerto-penasco.html"
+    }
+   ],
+   "notaVerificador": "Dentro de 300 m, 98 de 101 negocios del DENUE declaran Benito Juárez (los otros: 2 Centro y 1 Brisas). Evidencia independiente: (1) en la capa COLONIA del INE el punto cae dentro del polígono 'BENITO JUAREZ'. (2) Las 1,361 direcciones del registro nacional dentro de ese polígono tienen CP 83554, y su mediana (31.30219,-113.53732) está a 262 m. (3) Hay negocios que se autodeclaran 'Col. Benito Juárez': Plaza Pelícanos (Av. Coahuila 444, entre Fremont y Víctor Estrella) y Blvd. Fremont y Av. Colima. Otros dicen 'colonia El Mirador' en Sinaloa/Jalisco y en Sinaloa entre Mier y Terán y Primo de Ve"
+  },
+  {
+   "nombre": "Bosques de San Rafael",
+   "lat": 31.34366,
+   "lng": -113.48677,
+   "radio": 300,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "agregada: polígono del INE, DENUE y calles de OpenStreetMap (no está en SEPOMEX)",
+   "limites": "Borde nororiente de la colonia San Rafael: Calle 44 (Río Culiacán) y Avenidas 64-67, que continúan la cuadrícula numerada de San Rafael. Se desconoce su extensión real.",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI)",
+     "detalle": "Un solo negocio (Mini Abarrotes Carlitos, registrado dos veces) con tipo 'FRACCIONAMIENTO BOSQUES DE SAN RAFAEL', en 31.34406,-113.48697, Calle Ninguno entre 44 (Río Culiacán). Es la AGEB 3395, aparte de las de San Rafael.",
+     "url": null
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Calles cercanas: Calle 44 (a 102 m), Avenida 67 (103 m), Avenida 65 (147 m). No hay ningún lugar con ese nombre.",
+     "url": null
+    },
+    {
+     "tipo": "SEPOMEX (vía micodigopostal.org)",
+     "detalle": "No aparece entre los 104 asentamientos del municipio",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/"
+    }
+   ],
+   "notaVerificador": "Clasificación: colonia distinta; probablemente un fraccionamiento chico, sin registro en SEPOMEX, en el borde norte de San Rafael. De acuerdo, con matiz. 'cerca 300': solo aparece el propio negocio, registrado dos veces; los de San Rafael más cercanos están a más de 450 m. Evidencia nueva de OSM: justo en el punto hay una cuadrícula de calles residenciales sin nombre (ways 310743099, 310743101, 310743109, 310743111, 310743114 y 310743116). Está al norte de Calle 44, entre Av. 64 y 67, y mide unos 160 × 150 m. Es más densa que la de San Rafael (calles cada 45 m), lo que indica una lotificación "
+  },
+  {
+   "nombre": "Brisas Del Golfo",
+   "lat": 31.3405,
+   "lng": -113.5168,
+   "radio": 950,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Sur: Blvd. José López Portillo; del otro lado están Colosio y Deportiva. Oeste: Blvd. Benito Juárez (carretera a Sonoyta), incluido el triángulo de Sam's Club y Bodega Aurrera junto a López Portillo. Este: Blvd. Rafael Godoy Cisneros y luego Blvd. Las Conchas; el triángulo entre Godoy, López Portillo y Las Conchas es zona de transición con San Rafael. Norte: el cruce de Blvd. Las Conchas con Blvd. Benito Juárez (31.35186,-113.51732). Su eje es la Calle 38 Río Suchiate, donde están el Hospital General y la UMF 9 del IMSS. Otras calles: Av. Las Conchas, Guillermo Munro, Calle 36 Río Asunción, Río Bravo (oficinas de OOMAPAS) y Río Pánuco. Privadas: Oasis, Del Mar, Tulipanes, Claveles, Dunas, Cactus, Pinacate y Las Brisas. La UTPP, en el borde noreste (~31.349,-113.504), también da como dirección Col. Brisas del Golfo.",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "118 negocios: BRISAS 95, BRISAS DEL GOLFO 22 y 'BRISAS  DEL GOLFO' 1. A ellos se suman 13 negocios que dan como colonia el nombre de su privada (Oasis, Del Mar, Tulipanes, Claveles, Dunas, Cactus, Pinacate, Salinas). Todos están al norte de López Portillo, entre Blvd. Benito Juárez y Blvd. Las Conchas, con CP 83553. Mediana: 31.34103,-113.51687.",
+     "url": null
+    },
+    {
+     "tipo": "Directorio IMSS",
+     "detalle": "'UMF 9 PUERTO PEÑASCO, 38A ESQ LAS CONCHAS SIN NUMERO, COL. BRISAS DEL GOLFO, C.P. 83550'. La Calle 38 es Río Suchiate; el cruce Río Suchiate × Av. Las Conchas en OSM está en 31.34115,-113.51571. Otra entrada del mismo directorio da 'Río Suchiate y Marcelo Pino, Col. Centro', que parece la colonia genérica.",
+     "url": "https://www.imss.gob.mx/directorio?page=385"
+    },
+    {
+     "tipo": "Sitio oficial de OOMAPAS",
+     "detalle": "Oficinas en Calle Río Bravo, entre Eduardo Ibarra y Los Ángeles, Col. Brisas del Golfo. El cruce Río Bravo × Los Ángeles en OSM está en 31.34234,-113.51324, y el DENUE ubica a OOMAPAS en 31.34237,-113.51405.",
+     "url": "https://oomapaspenasco.gob.mx"
+    },
+    {
+     "tipo": "Sitio oficial de la Universidad Tecnológica de Puerto Peñasco",
+     "detalle": "Dirección: 'Bulevar Tecnológico S/N Col. Brisas del Golfo C.P. 83550'. OSM ubica la UTPP en 31.34932,-113.50426 (way/687162934).",
+     "url": "https://www.utpp.edu.mx/"
+    },
+    {
+     "tipo": "OpenStreetMap (lugares y calles)",
+     "detalle": "El Hospital General Puerto Peñasco está sobre Río Suchiate, en 31.34164,-113.51639. Las calles 'Cerrada Las Brisas' (31.3414,-113.5197) y 'Cerrada de las Dunas' (31.3385,-113.5167) están en el núcleo; los anuncios citan Cerrada Las Dunas como Col. Brisas del Golfo.",
+     "url": null
+    },
+    {
+     "tipo": "OpenStreetMap (nodo de colonia, descartado)",
+     "detalle": "Nodo place=suburb 'Brisas del Golfo' en 31.33298,-113.50457. De los 18 negocios del DENUE a 300 m, 16 dicen San Rafael: el nodo está corrido ~1.4 km al sureste.",
+     "url": "https://www.openstreetmap.org/node/11463541098"
+    },
+    {
+     "tipo": "pueblosamerica",
+     "detalle": "Da CP 83553 y la sitúa 'a 4.0 km al noreste del centro de Puerto Peñasco', sin coordenadas.",
+     "url": "https://mexico.pueblosamerica.com/ii/brisas-del-golfo"
+    }
+   ],
+   "notaVerificador": "Confirmada con el INE: el punto cae dentro del polígono BRISAS DEL GOLFO (250 ha), a 180 m del centro de su red de calles (31.34183,-113.51570). Dentro del polígono hay 105 negocios Brisas o de sus privadas, y las 8 privadas (Oasis, Del Mar, Tulipanes, Claveles, Dunas, Cactus, Pinacate, Salinas) caen dentro. A 300 m, los 46 negocios son Brisas o sus privadas. Revisé las fuentes citadas. IMSS: 'UMF 9 ... 38A ESQ LAS CONCHAS ... COL. BRISAS DEL GOLFO, C.P. 83550'; el cruce Río Suchiate × Av. Las Conchas cae dentro del polígono. OOMAPAS: 'Calle Río Bravo entre Eduardo Ibarra y Los Angeles Col. Br"
+  },
+  {
+   "nombre": "Brisas Del Mar",
+   "lat": 31.3607,
+   "lng": -113.548,
+   "radio": 550,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Aproximados. Al sur: calles Tiburón/Gorrión y Ferrocarrileros, lat ~31.357, donde empieza 4 de Marzo. Al norte: lat ~31.3655, límite de la AGEB 3450; podría seguir hasta ~31.370 al poniente de Porfirio Álvarez Barnett (AGEB 3554, aún sin habitantes en 2020). Al poniente: Calle Porfirio Álvarez Barnett y el camino diagonal, lng ~-113.551 a -113.553. Al oriente: prolongación norte de Av. Constitución, lng ~-113.5422. Calles internas: Lobo Marino, Marlín Azul, Curvina, Cenzontle, Cacatúa, Las Grullas, Cardenal, Ferrocarrileros y Gorrión; de norte a sur, Porfirio Álvarez Barnett, Gustavo Sotelo y Ulises Irigoyen.",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "14 negocios: 'BRISAS DEL MAR' (10), 'COLONIA BRISAS DEL MAR' (3) y 'BRISAS DE MAR' (1). Ninguno está lejos del grupo: todos caen en la AGEB 3450 (manzanas 016 a 085), salvo una blokera en la AGEB 3554. Centro 31.3597,-113.5487; radio80 de 407 m. Entre ellos: Abarrotes Angelito y Ministerio Hebrón (Calle Las Grullas entre Porfirio Álvarez Barnett y Gustavo Sotelo), Abarrotes Dulce (Calle Cardenal entre Gustavo Sotelo y Ulises Irigoyen), Abarrotes Lucy (Calle Cacatúa y Constitución), Abarrotes Brisa del Mar (Calle 'Zenzote', es decir Cenzontle), Changarrito El Camino (Curvina entre Lobo Marino y Marlín Azul), Tiendita Pancho (Lobo Marino), Iglesia Fuente de Fe (Ferrocarrileros entre Gustavo Sotelo y Ulises Irigoyen) e Iglesia Cristiana (Ulises Irigoyen entre Gorrión y Ferrocarrileros).",
+     "url": null
+    },
+    {
+     "tipo": "INEGI Marco Geoestadístico (dic. 2025) y Censo 2020",
+     "detalle": "Parte norte de la AGEB 2604800013450, al norte de lat ~31.357: 73 manzanas con 522 habitantes y 142 viviendas habitadas en 2020, en una caja de lat 31.3569 a 31.3656 y lng -113.5528 a -113.5423. El centro de población queda en 31.3597,-113.5484. Al noroeste está la AGEB 3554 (14 manzanas, sin población en 2020), donde se ubica la blokera 'BRISAS DE MAR'.",
+     "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/agebu/2604800013450"
+    },
+    {
+     "tipo": "INEGI manzanas (servicio wscatgeo)",
+     "detalle": "Polígonos y población de las manzanas. Con ellos vinculé las claves de manzana del DENUE.",
+     "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mza/26/048"
+    },
+    {
+     "tipo": "OpenStreetMap (nodo heredado del INEGI)",
+     "detalle": "El nodo 336176813 'Brisas del Mar' se importó en 2009 (usuario lsmex, catálogo de localidades del INEGI) y antes tenía place=village. Está en 31.3557,-113.5378, ~1 km al oriente del núcleo del DENUE. Confirma que el nombre corresponde al borde norte de la ciudad, pero su posición es imprecisa y no lo usé como centro.",
+     "url": "https://www.openstreetmap.org/node/336176813"
+    },
+    {
+     "tipo": "SEPOMEX (vía micodigopostal.org)",
+     "detalle": "Aparece como 'Brisas Del Mar', Colonia, CP 83556, zona urbana, el mismo CP de las colonias del norte.",
+     "url": "https://micodigopostal.org/codigo-postal/83556/"
+    },
+    {
+     "tipo": "Búsqueda web",
+     "detalle": "Busqué Brisas del Mar con OOMAPAS, escuelas, iglesias y la calle Porfirio Álvarez Barnett. No hubo resultados útiles: la mayoría de los 'Brisas del Mar' son de otras ciudades o se confunden con Brisas del Golfo (CP 83553, en el oriente). Un anuncio en propiedades.com menciona 'Col. Brisas Del Mar, CP 83556' con una referencia que no se puede ubicar. El cupo de búsquedas web se agotó.",
+     "url": null
+    }
+   ],
+   "notaVerificador": "Intenté demostrar que el punto está mal y no lo logré. (1) DENUE: los 8 negocios a 300 m del punto declaran Brisas del Mar. (2) Fuente independiente nueva: la capa COLONIA del INE tiene un polígono 'BRISAS DEL MAR' de 135.8 ha, entre lat 31.3554 y 31.3657 y entre lng -113.5532 y -113.5383. Su esquina noroeste coincide exactamente con la de la AGEB 3450 del INEGI. El mapa del INE pone la etiqueta BRISAS DEL MAR sobre las mismas calles que aparecen en el DENUE: Las Grullas, Cardenal, Cacatúa, Zenzontle, Tucán, Marlín Azul, Cabrilla, Pez Dorado, Lobo Marino, Ferrocarrileros, Gorrión, Tiburón, Cur"
+  },
+  {
+   "nombre": "Conjunto Ballenas",
+   "lat": 31.33005,
+   "lng": -113.5293,
+   "radio": 60,
+   "confianza": "media",
+   "limiteOficial": false,
+   "verificacion": "confirmada",
+   "limites": "Conjunto cerrado dentro de la manzana en cuña que forman la Calle Richard Strauss (sur) y la Calle Andrés Rosales (noroeste). Queda al oriente, es decir detrás, de la Central de Autobuses Albatros sobre el Blvd. Benito Juárez. La manzana cierra al este con la Calle Silvestre Revueltas y la Calle Rodolfo Campodónico. Se entra por dos calles internas sin nombre que salen de Richard Strauss (cerca de 31.3298,-113.5291 y 31.3299,-113.5294) y se juntan en 31.33033,-113.52910.",
+   "fuentes": [
+    {
+     "tipo": "Anuncio Vrbo",
+     "detalle": "Texto del anuncio: 'Conjunto Ballena is a gated community located between Richard Straus and Andres Rosales behind Albatros Bus Station', a 8 min de la playa, condominio #12 de dos pisos. Coordenadas del marcador en la página: 31.330018,-113.529359.",
+     "url": "https://www.vrbo.com/1599208"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Central de Autobuses (way 435362431) en 31.33053,-113.53042. Las calles Richard Strauss y Andrés Rosales nacen juntas detrás de la central (31.33012,-113.53002). Dentro de la cuña hay calles residenciales sin nombre (vías 777683128 y 971981078) justo donde cae el marcador.",
+     "url": null
+    },
+    {
+     "tipo": "INEGI Marco Geoestadístico 2024 (ejes de vialidad)",
+     "detalle": "Dos 'Calle Ninguno' (vialidades 07426 y 07427) salen de Richard Strauss y se unen en 31.33033,-113.52910. El marcador de Vrbo queda a 13 m de su punto medio.",
+     "url": "https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/geografia/marcogeo/794551132173/26_sonora.zip"
+    },
+    {
+     "tipo": "DENUE (INEGI)",
+     "detalle": "ALBATROS AUTOBUSES en Blvd. Benito Juárez García entre José López Portillo y Richard Strauss, col. Nueva Aurora, CP 83556 (31.33050,-113.53055).",
+     "url": null
+    },
+    {
+     "tipo": "Cartografía oficial (INE)",
+     "detalle": "La capa COLONIA del INE no lo dibuja como polígono propio: la cuña queda dentro de 'NUEVA AURORA'. Tampoco aparece en ninguna otra parte de la ciudad.",
+     "url": "https://cartografia.ine.mx/wms/index?resource=wnacional&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=COLONIA,VIALIDAD&STYLES=&SRS=EPSG:4326&BBOX=-113.5315,31.3262,-113.5262,31.3315&WIDTH=1400&HEIGHT=1400&FORMAT=image/png"
+    }
+   ],
+   "notaVerificador": "(1) Abrí el anuncio de Vrbo 1599208. Dice textualmente 'Conjunto Ballena is a gated community located between Richard Straus and Andres Rosales behind Albatros Bus Station' y 'near Tiberones [Tiburones] baseball Stadium'. Las URL de su mapa estático traen el marcador 31.33002,-113.52936. (2) Geometría: en INEGI y OSM, Richard Strauss y Andrés Rosales se separan en 31.33012-31.33015,-113.53000, unos 60 m detrás de la central Albatros (DENUE 31.33050,-113.53055). La cuña es la manzana 2006927 del INE (0.73 ha), con centroide 31.33017,-113.52921, a 15 m del punto. Dentro, las vías de OSM 77768312"
+  },
+  {
+   "nombre": "Country Garden",
+   "lat": 31.36907,
+   "lng": -113.55003,
+   "radio": 650,
+   "confianza": "media",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Polígono INE de unas 79 ha en la entrada norponiente de la ciudad. Al norte, el Libramiento Puerto Peñasco cerca de su entronque con el Blvd. Costa Diamante y la Carretera Costera (31.374,-113.557). Al nororiente, un camino de terracería en diagonal. Al oriente, la prolongación de Av. Constitución (-113.5424). Al sur, un camino en la latitud 31.3655 que la separa de Brisas del Mar. Al poniente, el Derecho de Vía (diagonal). Calles internas según el INE: Country Garden, Sierra Alta, Sierra Lampazos, Sierra de Cananea, Sierra Pinacate, Sierra San Francisco, Sierra Cubabi, Sierra de Cucurpe, Sierra de Juárez, Sierra Pinta, Sierra Bambarria, De las Sierras, Cerro Prieto, Cerro La Ballena, Cerro Colorado, Cerro San Pedro, Cerro Batamote y María de Jesús Barnett.",
+   "fuentes": [
+    {
+     "tipo": "cartografia-oficial",
+     "detalle": "INE, capa COLONIA: polígono COUNTRY GARDEN de 78.7 ha, centroide 31.36907,-113.55003, recuadro 31.36545,-113.55757 a 31.37411,-113.54233; el 90 % del área queda a menos de 661 m.",
+     "url": "https://cartografia.ine.mx/wms/index?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=COLONIA&STYLES=&SRS=EPSG:4326&BBOX=-113.70,31.24,-113.40,31.45&WIDTH=3000&HEIGHT=2100&FORMAT=application/vnd.google-earth.kml%2Bxml"
+    },
+    {
+     "tipo": "cartografia-oficial",
+     "detalle": "INE, capa VIALIDAD: dentro del polígono hay calles llamadas COUNTRY GARDEN, CERRO PRIETO, CERRO LA BALLENA, CERRO COLORADO, varias SIERRA y DERECHO DE VIA.",
+     "url": "https://cartografia.ine.mx/wms/index?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=VIALIDAD&STYLES=&SRS=EPSG:4326&BBOX=-113.560,31.364,-113.540,31.376&WIDTH=1600&HEIGHT=1200&FORMAT=application/vnd.google-earth.kml%2Bxml"
+    },
+    {
+     "tipo": "anuncio-inmobiliario",
+     "detalle": "Rocky Point Luxury Properties / Playa Sonora Realty, visto en resultados de búsqueda (el anuncio ya no está activo): lote 'M010 L008 C. Cerro Prieto Country Garden'. Otro anuncio: lote 'M D L5 Country Garden, In Town', cerca de La Choya e Islas del Mar; otro texto habla de lotes 'justo a la entrada del pueblo'.",
+     "url": "https://www.playasonorarealty.com/cholla-bay-homes-for-sale/land/?page=3"
+    },
+    {
+     "tipo": "osm",
+     "detalle": "Retícula de calles residenciales sin nombre (ways 972591017 a 972591020 y 1367174498 a 1367174505) al sur del Libramiento Puerto Peñasco (way 94332585).",
+     "url": null
+    },
+    {
+     "tipo": "denue",
+     "detalle": "Solo hay un negocio dentro (Blokera, 31.36764,-113.55042, entre Porfirio Álvarez Barnett), y declara BRISAS DE MAR, la colonia vecina.",
+     "url": null
+    }
+   ],
+   "notaVerificador": "El punto está bien: es el centroide del polígono oficial del INE, que bajé de nuevo y sale idéntico. Está dentro del polígono, a 242–275 m del borde con Brisas del Mar. La parte construida (14 manzanas nuevas de INEGI 2024) está a unos 175 m al suroeste, así que el error es menor de 300 m. Cuatro fuentes son coherentes entre sí: la capa de colonias del INE, la de calles del INE (con una calle llamada Country Garden y nombres temáticos de sierras y cerros de Sonora), las manzanas de INEGI 2024 y la retícula sin nombre de OSM. Además, SEPOMEX la registra como fraccionamiento con CP 83556, igual "
+  },
+  {
+   "nombre": "Deportiva",
+   "lat": 31.3263,
+   "lng": -113.527,
+   "radio": 450,
+   "confianza": "media",
+   "limiteOficial": true,
+   "verificacion": "corregida",
+   "limites": "Oeste: Blvd. Benito Juárez; la acera oeste ya es Centro. Este: Blvd. Josefa Ortiz de Domínguez; la franja junto al bulevar entre la Calle 26 y Sobarzo la declaran Lagos y Ríos. Norte: Blvd. José López Portillo. Sur: Calle 25 Adolfo López Mateos; más al sur es Centro. Incluye la Unidad Deportiva y el Estadio Francisco León García, el Instituto Municipal del Deporte, el COBACH plantel Puerto Peñasco y la Secundaria Estatal 27. Calles: Juventino Rosas, Rodolfo Campodónico, Francisco González Bocanegra, Richard Strauss, Silvestre Revueltas, George Bizet, Manuel M. Ponce, Hermenegildo Galeana, Agustín de Iturbide, Calle 26 (No Reelección) y Calle 27 (Sufragio Efectivo / Alejandro Sobarzo).",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "62 negocios: DEPORTIVA 48, COLONIA DEPORTIVA 10, UNIDAD DEPORTIVA 2, DPORTIVA 1 y DEPORTVA 1, la mayoría con CP 83556. Están entre Blvd. Benito Juárez y Blvd. Josefa Ortiz, de López Mateos a López Portillo. Entre ellos están el Estadio Francisco León García (31.32569,-113.52706, que declara 'COLONIA DEPORTIVA'), el Instituto Municipal del Deporte, el COBACH y la Secundaria Estatal 27. Mediana: 31.32864,-113.52716.",
+     "url": null
+    },
+    {
+     "tipo": "OpenStreetMap (instalaciones deportivas)",
+     "detalle": "Complejo de canchas de béisbol, fútbol y básquetbol (ways 310752301 a 310752309, 1337816759, 436767596 y 436767597) entre 31.3257 y 31.3281 de latitud y -113.5321 a -113.5244 de longitud. Es la Unidad Deportiva que da nombre a la colonia. El COBACH (way/1234972515) está en 31.32933,-113.53025.",
+     "url": null
+    },
+    {
+     "tipo": "OpenStreetMap (calles)",
+     "detalle": "Esquinas: Blvd. Benito Juárez × López Mateos en 31.32513,-113.53420; Blvd. Benito Juárez × López Portillo en 31.33354,-113.52881; Josefa Ortiz × López Portillo en 31.33415,-113.52212; Josefa Ortiz × López Mateos en 31.32605,-113.52164. Centro del polígono: 31.32911,-113.52685.",
+     "url": null
+    },
+    {
+     "tipo": "Expedia / Travelocity",
+     "detalle": "Registran un barrio 'La Deportiva' en Puerto Peñasco, pero sin ubicación útil.",
+     "url": "https://www.travelocity.com/La-Deportiva-Puerto-Penasco-Hotels.0-n553248635976399513-0.Travel-Guide-Filter-Hotels"
+    }
+   ],
+   "notaVerificador": "El punto propuesto (31.3291,-113.5269) queda encima de otra colonia del catálogo. En la capa COLONIA del INE cae en NUEVA AURORA (fraccionamiento SEPOMEX, CP 83556), a 156 m del centro de calles de esa colonia (31.33051,-113.52695). Según el INE, LA DEPORTIVA (46 ha) va de la Calle Benito Juárez García (sur, ~31.3233) a la Calle 26 al poniente de Campodónico y al Blvd. Sobarzo hasta Galeana. Poniente: Calle Vicente Guerrero / Blvd. Benito Juárez. Oriente: Galeana, López Mateos y Josefa Ortiz. Nueva Aurora ocupa de Sobarzo / Richard Strauss a López Portillo, entre Blvd. Benito Juárez y Josefa O"
+  },
+  {
+   "nombre": "Diamond Village",
+   "lat": 31.32881,
+   "lng": -113.56928,
+   "radio": 350,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Polígono del INE: al oeste el Blvd. Costa Diamante, desde la glorieta de Costa Diamante hacia el norte; al sur el Blvd. Costero 2000, frente a Las Palomas y su campo de golf; al norte la Avenida 32 y su enlace con el Blvd. Costa Diamante (gasolinera La Choya); al este el Peñasco Expocenter. Recuadro aproximado: lat 31.3257 a 31.3321, lng -113.5724 a -113.5664.",
+   "fuentes": [
+    {
+     "tipo": "INE, cartografía electoral (capa COLONIA)",
+     "detalle": "Polígono 'DIAMOND VILLAGE' de 30.8 ha. Centroide en 31.32881,-113.56928 y vértice más lejano a 446 m.",
+     "url": "https://cartografia.ine.mx/wms/index?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=COLONIA&STYLES=&SRS=EPSG:4326&BBOX=-113.68,31.25,-113.40,31.45&WIDTH=2800&HEIGHT=2000&FORMAT=application/vnd.google-earth.kml%2Bxml"
+    },
+    {
+     "tipo": "Overture Maps (fuente Meta)",
+     "detalle": "Lugar llamado 'Diamond Village' en 31.32928,-113.57007, dentro del polígono del INE.",
+     "url": "https://www.facebook.com/170518836453295"
+    },
+    {
+     "tipo": "Anuncio en Vrbo/Expedia",
+     "detalle": "'Casa Diamante (3 Bedroom 2 Bathroom)', descrita en el anuncio como 'Diamond Village community, a short drive to Sandy Beach', con alberca común. Barrio: Sandy Beach. El mapa marca un círculo de 500 m centrado en 31.32862,-113.56538.",
+     "url": "https://www.vrbo.com/9503055ha"
+    },
+    {
+     "tipo": "BringFido",
+     "detalle": "Casa de renta 'Diamond Village' con coordenadas 31.33040,-113.57475, unos 250 m al oeste del polígono.",
+     "url": "https://www.bringfido.com/lodging/745506"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Zona residencial sin nombre (way 497539732) junto al Blvd. Costa Diamante, con calles internas y una alberca privada común (way 1235305705).",
+     "url": "https://www.openstreetmap.org/way/497539732"
+    },
+    {
+     "tipo": "Airbnb (descartado)",
+     "detalle": "'Casa Oasis', en Diamond Village según el anuncio. Su ubicación es aproximada (isExactLocation=false): 31.35176,-113.56212, 2.5 km al norte, en terreno sin calles.",
+     "url": "https://www.airbnb.com/rooms/44403941"
+    },
+    {
+     "tipo": "SEPOMEX (vía micodigopostal)",
+     "detalle": "Fraccionamiento, CP 83555, zona urbana.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/diamond-village/"
+    }
+   ],
+   "notaVerificador": "Intenté desmentir esta ubicación y no pude. Volví a descargar la capa COLONIA del INE: el polígono 'DIAMOND VILLAGE' está tal como se citó (30.8 ha, centroide 31.32881,-113.56928) y el punto no cae dentro de ningún otro polígono. Evidencia propia: la capa VIALIDAD del INE marca la calle 'DE LA PLATA' dentro del polígono. Los bordes coinciden con calles reales, según 'cruce'. Blvd. Costa Diamante × Costero 2000 se cruzan en 31.32658,-113.57226, que es el vértice suroeste. Av. 32 × Costa Diamante se cruzan en 31.33163,-113.56923, sobre el borde norte. El Marco Geoestadístico del INEGI 2024 tiene"
+  },
+  {
+   "nombre": "El Cárcamo",
+   "lat": 31.3106,
+   "lng": -113.5266,
+   "radio": 350,
+   "confianza": "media",
+   "limiteOficial": false,
+   "verificacion": "corregida",
+   "limites": "Franja al norte del Blvd. Fremont, entre Av. Sinaloa (oeste) y aprox. Belisario Domínguez/Justo Sierra (este), hasta la vía del tren/Calle 10 (De las Margaritas) al norte. Incluye Av. Sinaloa, Niños Héroes, Nayarit y Calle 10 entre Fremont y la vía, y las plazas comerciales de Fremont entre Sinaloa y Morelos y al este de Nuevo León/Vicente Guerrero. Colinda al sur (cruzando Fremont) con Benito Juárez, al oeste con Fracc. Peñasco y al norte con Oriente. El DENUE también marca así a Walmart y a un outlet en Blvd. Josefa Ortiz de Domínguez entre Fremont y Calle 10 (~1.1 km al este). Podría extenderse por el lado norte de Fremont hasta Josefa Ortiz, pero en ese tramo la mayoría de los negocios dice Oriente o Benito Juárez.",
+   "fuentes": [
+    {
+     "tipo": "DENUE INEGI (abril 2026, datos locales)",
+     "detalle": "42 negocios 'EL CARCAMO' en 19 ubicaciones distintas (AGEB 1191-039/026, 2147-033, 2289-022/037/038 y 2325-009); 40 declaran el CP 83553, que es el oficial de la colonia. Entre Fremont y la vía, de Sinaloa a ~-113.528, son la etiqueta más común (36 de 51 negocios). Mediana: 31.30609,-113.53229.",
+     "url": "https://www.inegi.org.mx/app/mapa/denue/"
+    },
+    {
+     "tipo": "Web: micodigopostal.org (descartado)",
+     "detalle": "Su pin está en 31.310967,-113.5259759, ~700–800 m al noreste. Los 51 negocios del DENUE a 300 m de ese punto declaran 'ORIENTE', así que se considera un pin equivocado.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/el-carcamo/"
+    },
+    {
+     "tipo": "Web: propiedades.com (descartado)",
+     "detalle": "Anuncia una casa en 'Calle 46 Río Papaloapan #566 C, Col. El Carcamo, 83553'. Según el DENUE esa calle está en San Rafael, así que la colonia del anuncio está mal y no se usó.",
+     "url": "https://propiedades.com/el-carcamo-puerto-penasco"
+    }
+   ],
+   "notaVerificador": "La propuesta (31.3068,-113.5313) se basa solo en el DENUE, y hay evidencia independiente que la contradice. (1) La capa COLONIA del INE tiene un polígono 'EL CARCAMO' de 18.9 ha al norte de la vía. Va de Calle Belisario Domínguez Palencia (oeste) a Av. Juventino Rosas (este), y de la vía del tren/Calle 10 (sur) a Calle Miguel Hidalgo y Costilla (norte). Calles internas: Abelardo L. Rodríguez, Rodolfo Campodónico, Francisco González Bocanegra, Jaime Nunó Roca, 12 de Octubre y Magnolias/Álvaro Obregón. Sus esquinas coinciden casi al metro con los cruces de OSM Belisario Domínguez × Hidalgo y Juv"
+  },
+  {
+   "nombre": "El Puerto",
+   "lat": 31.3022,
+   "lng": -113.5493,
+   "radio": 550,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "El Puerto Viejo, en la península del Cerro de la Ballena (faro). Calles: Calle Circunvalación (Malecón Kino) alrededor del cerro, Av. Primero de Junio, Pescadores, 16 de Septiembre, 20 de Noviembre, Ignacio Zaragoza, José Alcantar y Ulloa. Al norte, la dársena y el Blvd. Benito Juárez; al oeste y sur, el mar; al este, la Cuesta del Agua y las pescaderías de la Calle Recinto Portuario, al final del Blvd. Benito Juárez. Comparte estas mismas cuadras con Recinto Portuario: 'El Puerto' predomina en la mitad sur (Pescadores, 16 de Septiembre, vuelta del cerro) y en los puestos del lado del mar del malecón.",
+   "fuentes": [
+    {
+     "tipo": "DENUE INEGI (abril 2026, datos locales)",
+     "detalle": "73 negocios 'PUERTO' y 15 'EL PUERTO', todos en el AGEB 1204 (Puerto Viejo) y entremezclados. Calles: Circunvalación (58 en la manzana 017: lado del mar y vuelta del cerro), Primero de Junio, Pescadores, 16 de Septiembre, Zaragoza, Alcantar y 8 pescaderías en Calle Recinto Portuario. Mediana: 31.30360,-113.55156; 80 % a menos de 406 m.",
+     "url": "https://www.inegi.org.mx/app/mapa/denue/"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Nodo place=suburb 'El Puerto' en 31.30280,-113.54887, sobre el Cerro de la Ballena junto a Alcantar/Zaragoza. Queda a 271 m del centro del DENUE.",
+     "url": "https://www.openstreetmap.org/node/11463541095"
+    },
+    {
+     "tipo": "OpenStreetMap (lugares)",
+     "detalle": "Faro Cerro de la Ballena (31.29977,-113.54857), Malecón de Puerto Peñasco y Plaza del Malecón. Iglesia Sagrado Corazón de Jesús en Primero de Junio, con CP 83554.",
+     "url": "https://www.openstreetmap.org/way/441206493"
+    },
+    {
+     "tipo": "Web: micodigopostal.org",
+     "detalle": "Confirma 'El Puerto', colonia urbana, CP 83554, pero dice que no tiene su ubicación en el mapa.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/el-puerto/"
+    }
+   ],
+   "notaVerificador": "Dentro de 300 m hay 99 negocios: 72 'RECINTO PORTUARIO' y 24 'PUERTO'/'EL PUERTO'. En el Puerto Viejo el DENUE asigna los dos nombres por manzana, así que por sí solo no confirma ni tumba el punto. Evidencia independiente que sí lo sostiene: (1) La capa COLONIA del INE tiene un polígono 'EL PUERTO' de 11 ha que contiene el punto. Cubre el interior del Puerto Viejo: Blvd. Benito Juárez, Alcantar, Zaragoza, 20 de Noviembre, 16 de Septiembre y Pescadores, con 1 de Junio como borde oeste. Su centroide (31.30378,-113.54998) está a ~186 m. (2) Dentro de ese polígono hay 241 direcciones del registro "
+  },
+  {
+   "nombre": "Ferrocarrilera",
+   "lat": 31.3177,
+   "lng": -113.5437,
+   "radio": 900,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "corregida",
+   "limites": "Al poniente de la vía y de la estación Ferromex. Oriente: Av. Venustiano Carranza y la vía (≈ -113.541); del otro lado está el Centro. Hay una pequeña franja 'FERROCARRIL' justo al oriente de la vía, en Calles 25-26 entre Constitución y Dimas Noriega. Sur: Calle 13 (≈31.311); después sigue Benito Juárez. Norte: Calle 26/Blvd. Costero 2000 (≈31.3255); después sigue Obrera. Poniente: Calle Segunda/Crescencio Rejón (≈ -113.5505), rumbo a Playa Bonita. Las avenidas norte-sur son Luis Encinas Johnson, Emiliano Zapata, Francisco Villa, Pino Suárez y Plutarco Elías Calles; las calles este-oeste van numeradas del 13 al 26.",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "FERROCARRILERA 72 (+8 con faltas), FERROCARRIL 75 y FERROCARRIL PLAYAS 64 (+2 'LYAS'): 221 negocios mezclados en las mismas manzanas entre la vía, Calle 13 y Calle 26. Centro de la franja 31.3185,-113.5455; el 95 % de los negocios queda a menos de 950 m.",
+     "url": "https://www.inegi.org.mx/app/mapa/denue/"
+    },
+    {
+     "tipo": "sitio de viajes",
+     "detalle": "Hotel Vista Marina, 'Avenida Plutarco Elías Calles, C. 13 & ... Sonora 83555', ubicado en 'Puerto Peñasco (Ferrocarrilera)'. En OSM ese cruce está en 31.3112,-113.5461, donde el DENUE dice FERROCARRIL o FERROCARRIL PLAYAS.",
+     "url": "https://nz.trip.com/hotels/puerto-penasco-hotel-detail-13686495/hotel-vista-marina"
+    },
+    {
+     "tipo": "sitio de viajes",
+     "detalle": "Expedia pone en Ferrocarrilera alojamientos sobre Francisco Villa y Calle 16, y los condominios Casamar en Francisco Villa entre las calles 16 y 17 (según OSM, 31.3145-31.3156,-113.5444). Lo vi en fragmentos de búsqueda; la página dio HTTP 429.",
+     "url": "https://www.expedia.com/Puerto-Penasco-Ferrocarrilera.dx553248635976399876"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "La estación Puerto Peñasco de Ferromex (31.3193,-113.5411) y sus vías auxiliares forman el borde oriente y explican el nombre. OSM no tiene un nodo de colonia.",
+     "url": "https://www.openstreetmap.org/node/2232106607"
+    },
+    {
+     "tipo": "catálogo de CP / anuncio",
+     "detalle": "micodigopostal: Ferrocarrilera, CP 83555, sin mapa. propiedades.com usa 'Col. Ferrocarrilero', CP 83555.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/ferrocarrilera/"
+    }
+   ],
+   "notaVerificador": "El punto propuesto (31.3185,-113.5455) está dentro de Ferrocarrilera y el DENUE lo respalda. Pero queda a solo unos 100 m de Av. Plutarco Elías Calles, que oficialmente es el límite con la colonia Bella Vista (también CP 83555), porque la propuesta extendió Ferrocarrilera hasta Calle Segunda/Crescencio Rejón. Hay tres pruebas. (1) Polígonos de heraldo.com.mx: Ferrocarrilero va de Plutarco Elías Calles (-113.5466) a la vía (-113.540), de Calle 26 a Calle 13/11; Bella Vista queda al poniente de Plutarco Elías Calles, hasta la costa, con centro poblado en 31.3173,-113.5481. (2) Dos anuncios con c"
+  },
+  {
+   "nombre": "Hacienda de Cortés",
+   "lat": 31.38949,
+   "lng": -113.49849,
+   "radio": 300,
+   "confianza": "alta",
+   "limiteOficial": false,
+   "verificacion": "confirmada",
+   "limites": "Fraccionamiento aislado a unos 8 a 9 km al norte del centro, al poniente de la carretera federal 8 Sonoyta-Puerto Peñasco y a unos 1.5 km al norte del entronque con el Libramiento. Se entra desde la carretera por la Calle Hacienda de Cortés (31.3904,-113.4930). El área residencial de OSM va de 31.3866 a 31.3920 en latitud y de -113.5005 a -113.4961 en longitud: Calle Las Granjas al oriente y sureste, Calle Bahía Mazatlán al poniente y Calle Hacienda de Cortés al norte. Calles internas: Blvd. Vía de Cortés, Bahía Playa del Sol, Bahía Punta Peñasco, Bahía Punta Garena, Puerto Nuevo, Bahía Santa María, Bahía de Ensenada, Bahía Tortugas y Bahía Loreto.",
+   "fuentes": [
+    {
+     "tipo": "osm",
+     "detalle": "Nodo place=suburb 'Hacienda De Cortés' (node 11467771448, 31.39057,-113.49393) y área residencial (way 751161580, centroide 31.38949,-113.49849, el 90 % a menos de 270 m), con las calles Hacienda de Cortés, Vía de Cortés, Las Granjas y las calles Bahía.",
+     "url": null
+    },
+    {
+     "tipo": "denue",
+     "detalle": "VIDUSAMEX: colonia HACIENDA DE CORTES 1 ER SECTOR, Calle Hacienda de Cortés entre Vía de Cortés y Las Granjas, CP 83553, 31.39186,-113.49618.",
+     "url": null
+    },
+    {
+     "tipo": "anuncio-inmobiliario",
+     "detalle": "5 anuncios MLS con coordenadas dentro del área: 26-878 '534 Calle Via De Cortez' 31.39147,-113.49737; 26-1196 'L12 M4 Bahía Playa del Sol' 31.39097,-113.49734; 26-407 '10 Bahía Puerto Nuevo' 31.38969,-113.49891; 26-592 '456 Bahía Puerto Nuevo' 31.38986,-113.49898; 25-286 'M7 L14-L15 Bahía Playa del Sol' 31.3897,-113.49816. Uno dice: 'Colonia Hacienda de Cortes, a 8 minutos del casco urbano'.",
+     "url": "https://www.playasonorarealty.com/search/results/?subdivision=Hacienda%20De%20Cortez"
+    },
+    {
+     "tipo": "anuncio-inmobiliario",
+     "detalle": "Oceano Sales MLS 26-878: 534 Calle Via De Cortez, Hacienda De Cortez, casa de interés social construida en 2011.",
+     "url": "https://www.oceano-sales.com/idx/534-Calle-Via-De-Cortez-Hacienda-De-Cortez-Puerto-Penasco-mls_26-878/"
+    },
+    {
+     "tipo": "anuncio-inmobiliario",
+     "detalle": "Top Mexico Real Estate: 'L12 M4 BAHIA PLAYA DEL SOL, HACIENDA DE CORTEZ' y '10 Bahia Puerto Nuevo, Hacienda De Cortez'.",
+     "url": "https://www.topmexicorealestate.com/rockypoint-real-estate/homes-rockypoint.php"
+    },
+    {
+     "tipo": "sepomex",
+     "detalle": "Fraccionamiento con CP 83556; el directorio no da ubicación.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/hacienda-de-cortes/"
+    }
+   ],
+   "notaVerificador": "Todo coincide y no encontré nada que la contradiga. El punto es el centroide del área residencial de OSM, que comprobé con Overpass. Agregué dos fuentes independientes. La primera es el Marco Geoestadístico 2024 de INEGI, que tiene las mismas calles con los mismos nombres y en el mismo lugar. La segunda es el Censo 2020, que da 213 habitantes y un centro ponderado a 60 m del punto, con todas las viviendas a 277 m o menos; por eso el radio de 300 m es adecuado. Abrí el anuncio MLS 26-592 y tiene coordenadas a 50 m del punto. El negocio del DENUE (VIDUSAMEX, 31.39186,-113.49618) está a unos 15 m"
+  },
+  {
+   "nombre": "Islas del Mar",
+   "lat": 31.36301,
+   "lng": -113.60712,
+   "radio": 600,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "agregada: polígono de localidad del INEGI (las casas); el DENUE ubica su oficina en el camino de entrada",
+   "limites": "Sobre el Camino a Laguna del Mar, que sale de la Carretera Costera (a Golfo de Santa Clara). Queda al norte de Sandy Beach y al oriente de La Choya, a unos 5.5 km al noroeste del centro. El club de golf, la oficina de ventas y la tienda están entre lng -113.574 y -113.579. Un restaurante con el mismo nombre está 2 km al poniente (31.3662,-113.5999).",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI)",
+     "detalle": "5 negocios: Club Campo de Golf Islas del Mar (31.3725,-113.5736), oficina de ventas, centro de operaciones y Quick Stop (31.3683-31.3687,-113.5785), restaurante Islas del Mar (31.3662,-113.5999)",
+     "url": null
+    },
+    {
+     "tipo": "SEPOMEX (vía micodigopostal.org)",
+     "detalle": "'Islas del Mar', tipo Equipamiento, CP 83560, zona rural. Es un asentamiento propio, por eso no entra en las 43 urbanas.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/islas-del-mar/"
+    },
+    {
+     "tipo": "Sitio de rentas",
+     "detalle": "Casago renta casas en Islas del Mar (Casa Atardecer y Casa Estrella, de 4 recámaras): hay viviendas",
+     "url": "https://casago.com/rocky-point/islas-del-mar/"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "El 'Camino a Laguna del Mar' (ways 32561072 y 767265115) pasa junto a los negocios. Un tramo arranca en 31.3680,-113.5790, al lado de la oficina.",
+     "url": "https://www.openstreetmap.org/way/767265115"
+    }
+   ],
+   "notaVerificador": "Clasificación: asentamiento propio fuera de las 43 (SEPOMEX: Equipamiento, CP 83560, zona rural). No es alias de ninguna oficial. De acuerdo. 'cerca 300': 3 Islas del Mar y 1 'La Cholla' en el mismo punto que la oficina. Verificado: micodigopostal (Equipamiento, 83560, rural, sin mapa) y Casago (Casa Atardecer y Casa Estrella, 4 recámaras). En OSM, el Camino a Laguna del Mar (ways 32561072 y 767265115) se une en 31.36804,-113.57902, junto a la oficina. Evidencia propia: el sitio oficial islasdelmar.com da la dirección 'Carretera Entronque Cerro Prieto km 6.5, S/N, 83550'. Lo describe como comu"
+  },
+  {
+   "nombre": "José López Portillo",
+   "lat": 31.334,
+   "lng": -113.5335,
+   "radio": 1050,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Sur: Calle 26-27 Sufragio Efectivo (≈31.327), frontera con el Centro. Norte: Blvd. Samuel Ocaña García (≈31.342) en la mitad oriente. En la mitad poniente solo llega a Eustaquio (Eutiquio) Amador/Ramón Figueroa (≈31.336-31.340), porque la cuña entre la vía y Juan de la Barrera/Agustín Melgar la declara Nueva Esperanza. Poniente: la vía del tren/Av. Ferrocarril y Dimas Noriega (≈ -113.5435); del otro lado está Obrera. Oriente: Blvd. Benito Juárez García (≈ -113.524 a -113.532). La cruzan Blvd. José López Portillo (≈31.333) y Calle 30 Revolución.",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "'LOPEZ PORTILLO' (317), 'JOSE LOPEZ PORTILLO' (134) y variantes: 454 negocios con mediana 31.3337,-113.5331. Al sur de Samuel Ocaña y al este de Juan de la Barrera hay 264 negocios JLP contra 2 de Nueva Esperanza.",
+     "url": "https://www.inegi.org.mx/app/mapa/denue/"
+    },
+    {
+     "tipo": "anuncio inmobiliario",
+     "detalle": "'Boulevard José López Portillo #50, Col. José López Portillo' y rentas en 'av. San Luis 33, José López Portillo'. Av. San Luis Río Colorado cruza la colonia de norte a sur (lng ≈ -113.536).",
+     "url": "https://propiedades.com/jose-lopez-portillo-puerto-penasco/casas"
+    },
+    {
+     "tipo": "catálogo de CP",
+     "detalle": "Colonia José López Portillo, CP 83556.",
+     "url": "https://codigo-postal.co/en-us/mexico/sonora/colonia-jose-lopez-portillo/"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Trazo del Blvd. José López Portillo (31.332-31.337) y su cruce con Av. San Luis Río Colorado (31.3330,-113.5364). OSM no tiene un nodo de colonia.",
+     "url": "https://www.openstreetmap.org/way/656408115"
+    }
+   ],
+   "notaVerificador": "Con 'cerca 300' en el punto, 45 de 46 negocios dicen López Portillo. El punto está dentro del polígono oficial (heraldo.com.mx), donde las 3,499 direcciones de Overture tienen CP 83556. Queda a 283 m del centroide (31.3354,-113.5360) y a 172 m de la media de direcciones si se excluye la cuña poniente. La mediana de los 406 negocios JLP dentro del polígono está a 60 m (31.3337,-113.5330). Tres anuncios con coordenadas rotulados López Portillo caen dentro (Playa Sonora Realty): Revolución en 31.3306,-113.5389, Juan Escutia en 31.3401,-113.5346 y Andador Norte en 31.3364,-113.5281. El cruce San L"
+  },
+  {
+   "nombre": "Josefa Ortiz de Domínguez",
+   "lat": 31.3164,
+   "lng": -113.5133,
+   "radio": 950,
+   "confianza": "alta",
+   "limiteOficial": false,
+   "verificacion": "confirmada",
+   "limites": "Oeste: Blvd. Josefa Ortiz de Domínguez, entre Calle Miguel Hidalgo y Costilla y Callejón Simón Morúa. Norte: Callejón Simón Morúa hasta la Av. Roca Portense; más al este, Calle Juan Aldama. Este: Blvd. Rafael Godoy Cisneros. Sur: Calle 12 de Octubre / Calle 10, de Godoy Cisneros a Enriqueta de Tena, y luego Calle Miguel Hidalgo y Costilla, de Enriqueta de Tena al bulevar. Ahí colinda con La Termoeléctrica. Mide unos 1.4 x 1.0 km (~136 ha).",
+   "fuentes": [
+    {
+     "tipo": "Polígono KML (directorio de códigos postales heraldo.com.mx)",
+     "detalle": "'Colonia Josefa Ortiz de Domínguez, CP 83553': ~136 ha, centroide 31.31640,-113.51328. Sus vértices coinciden a pocos metros con calles de OSM (Blvd. Josefa Ortiz, Simón Morúa/Juan Aldama, Blvd. Rafael Godoy Cisneros, 12 de Octubre/Calle 10 y Miguel Hidalgo).",
+     "url": "https://www.heraldo.com.mx/v2/cache/kml/83553_josefa-ortiz-de-dominguez.kml"
+    },
+    {
+     "tipo": "Directorio de CP con mapa",
+     "detalle": "Ficha de la colonia. El centro del mapa es 31.31640,-113.51328.",
+     "url": "http://www.heraldo.com.mx/sonora/puerto-penasco/83553/josefa-ortiz-de-dominguez/"
+    },
+    {
+     "tipo": "Directorio de CP (geocodificación)",
+     "detalle": "Punto 31.3173591,-113.5103504, dentro del polígono.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/josefa-ortiz-de-dominguez/"
+    },
+    {
+     "tipo": "Directorio de localidades",
+     "detalle": "Coordenadas 31.31640321,-113.51327588, idénticas al centroide del polígono. No es una fuente independiente.",
+     "url": "https://mexico.pueblosamerica.com/ii/josefa-ortiz-de-dominguez-23"
+    },
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "Tres negocios declaran la colonia. Dos caen dentro del polígono: BCN Six Autoservicio Lucero (León de la Barra entre Julián Bustamante y Enriqueta de Tena, 31.31515,-113.51810) y Busmen (Av. Julián Bustamante entre Sonora y Melchor Ocampo, 31.31650,-113.51898). El tercero, Kuroda (31.32510,-113.52167), está sobre el bulevar a ~560 m y parece confundir la calle con la colonia. De los 230 negocios dentro del polígono, 222 escriben 'Oriente'.",
+     "url": null
+    }
+   ],
+   "notaVerificador": "Intenté refutar la ubicación y no pude. (1) Fuente propia: bajé en vivo la capa oficial COLONIA de la cartografía electoral del INE, que es más reciente que la del heraldo porque ya incluye fraccionamientos nuevos como Maeva Residencial. El polígono 'JOSEFA ORTIZ DE DOMINGUEZ' mide 145.7 ha y su centroide (31.31654,-113.51329) queda a 16 m del punto propuesto. Sus límites coinciden con los descritos: Blvd. Josefa Ortiz al oeste (de Miguel Hidalgo a Simón Morúa), Simón Morúa, Av. Roca Portense y Juan Aldama al norte, Blvd. Rafael Godoy Cisneros al este, y Calle 10/Víctor Estrella, Enriqueta de "
+  },
+  {
+   "nombre": "La Herradura",
+   "lat": 31.32984,
+   "lng": -113.54223,
+   "radio": 230,
+   "confianza": "media",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Polígono INE de unas 10 ha: al poniente Calle Dimas Noriega; al norte Av. 30 (vértices en Dimas Noriega x Av. 30 y Av. 30 x Av. Constitución); al oriente Av. Constitución (Calle 12); al sur aprox. Calle 28 (Independencia). Por dentro pasan Calle Ferrocarril, Calle 29 (De la Reforma), Calle 30 (Revolución) y López Collado. Colinda con José López Portillo, Obrera, Ferrocarrilero y Centro.",
+   "fuentes": [
+    {
+     "tipo": "cartografia-oficial",
+     "detalle": "INE, capa COLONIA del WMS electoral: polígono LA HERRADURA de 9.8 ha, centroide 31.32984,-113.54223, recuadro 31.32722,-113.54406 a 31.33203,-113.54061. Los 69 polígonos de colonias del INE de toda la ciudad quedaron en (archivo de trabajo)",
+     "url": "https://cartografia.ine.mx/wms/index?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=COLONIA&STYLES=&SRS=EPSG:4326&BBOX=-113.70,31.24,-113.40,31.45&WIDTH=3000&HEIGHT=2100&FORMAT=application/vnd.google-earth.kml%2Bxml"
+    },
+    {
+     "tipo": "cartografia-oficial",
+     "detalle": "INE, capa VIALIDAD: dentro del polígono están FERROCARRIL, 29 (DE LA REFORMA), 30 (REVOLUCION) y LOPEZ COLLADO; al sur 28 (INDEPENDENCIA) y al oriente 12 (CONSTITUCION).",
+     "url": null
+    },
+    {
+     "tipo": "osm",
+     "detalle": "Los cruces Dimas Noriega x Av. 30 (31.33196,-113.54385) y Av. 30 x Av. Constitución (31.33104,-113.54082) coinciden con los vértices norte del polígono.",
+     "url": null
+    },
+    {
+     "tipo": "denue",
+     "detalle": "18 negocios dentro del polígono; declaran LOPEZ PORTILLO (17) y CENTRO NORTE (1). Ninguno usa el nombre La Herradura.",
+     "url": null
+    },
+    {
+     "tipo": "web",
+     "detalle": "Dos búsquedas web: solo aparece en directorios de códigos postales con CP 83556, sin ubicación.",
+     "url": "https://codigo-postal.co/en-us/mexico/sonora/colonia-la-herradura/"
+    }
+   ],
+   "notaVerificador": "Intenté tumbarla y no pude. Bajé otra vez el WMS del INE y el polígono LA HERRADURA sale igual: 9.8 ha, centroide 31.32984,-113.54223. Sus cuatro esquinas coinciden con cruces de OSM a 21 m o menos, así que el INE está bien georreferenciado aquí. Límites: Dimas Noriega al poniente, Av. 30 al norte, Av. Constitución (Calle 12) al oriente y Calle Independencia (28) al sur. Encontré dos evidencias independientes. GeoNames tiene un punto 'La Herradura' (PPLX) a 35 m del centroide. El Censo 2020 cuenta 10 manzanas con 326 habitantes, y su centro ponderado queda a 35 m del punto propuesto. Prueba 'c"
+  },
+  {
+   "nombre": "La Termoeléctrica",
+   "lat": 31.3114,
+   "lng": -113.521,
+   "radio": 380,
+   "confianza": "alta",
+   "limiteOficial": false,
+   "verificacion": "confirmada",
+   "limites": "Norte: Calle Miguel Hidalgo y Costilla. Sur: Calle 10. Oeste: Av. Juventino Rosas. Este: Calle Enriqueta de Tena. Es una franja de ~680 x 380 m (~21 ha) que cruza el Blvd. Josefa Ortiz de Domínguez. Incluye la Subestación Puerto Peñasco de la CFE, la parroquia San Francisco de Asís y el Parque Josefa Ortiz de Domínguez.",
+   "fuentes": [
+    {
+     "tipo": "Polígono KML (directorio de códigos postales heraldo.com.mx)",
+     "detalle": "'Colonia La Termoeléctrica, CP 83553': ~21 ha, centroide 31.31136,-113.52098. Sus vértices coinciden con Miguel Hidalgo, Calle 10, Juventino Rosas y Enriqueta de Tena en OSM.",
+     "url": "https://www.heraldo.com.mx/v2/cache/kml/83553_la-termoelectrica.kml"
+    },
+    {
+     "tipo": "Directorio de CP con mapa",
+     "detalle": "Ficha de la colonia. El centro del mapa es 31.31136,-113.52099.",
+     "url": "http://www.heraldo.com.mx/sonora/puerto-penasco/83553/la-termoelectrica/"
+    },
+    {
+     "tipo": "Directorio de CP (geocodificación)",
+     "detalle": "Punto 31.3112992,-113.5207674, dentro del polígono.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/la-termoelectrica/"
+    },
+    {
+     "tipo": "Directorio de localidades",
+     "detalle": "Coordenadas 31.31136343,-113.52098533, iguales al centroide del polígono.",
+     "url": "https://mexico.pueblosamerica.com/ii/la-termoelectrica"
+    },
+    {
+     "tipo": "Estadística por colonia (MarketDataMéxico)",
+     "detalle": "Unas 23 ha, ~645 habitantes, 171 viviendas y 26 establecimientos. El principal empleador es el Municipio de Puerto Peñasco; dentro del polígono hay una dirección municipal de salud (Josefa Ortiz entre 12 de Octubre y Calle 10).",
+     "url": "https://www.marketdatamexico.com/es/article/Colonia-La-Termoelectrica-Puerto-Penasco-Sonora"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "La Subestación Puerto Peñasco (way 57775752) está en 31.31121,-113.52097, en el centro del polígono. Es el probable origen del nombre.",
+     "url": null
+    },
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "Yarda Castellanos (Calle Josefa Ortiz de Domínguez 5, entre 10 y 12 de Octubre; 31.31040,-113.52049) declara La Termoeléctrica y cae dentro. Forrajes y Criaderos La Tormenta ('calle ninguno, terreno baldío'; 31.31102,-113.51251) queda ~440 m al oriente y lo trato como punto suelto. Dentro del polígono, 42 de 43 negocios escriben 'Oriente'.",
+     "url": null
+    }
+   ],
+   "notaVerificador": "Confirmo la ubicación. (1) Fuente propia: la capa COLONIA del INE, descargada en vivo, tiene el polígono 'LA TERMOELECTRICA' de 21.6 ha. Su centroide (31.31128,-113.52103) queda a 14 m del punto propuesto. Límites: Calle Miguel Hidalgo y Costilla al norte, Calle Enriqueta de Tena al este, Calle 10/Víctor Estrella al sur y Av. Juventino Rosas al oeste, cruzando el Blvd. Josefa Ortiz. Coincide con lo descrito. (2) Censo 2020 por manzana (INEGI): dentro del polígono viven 549 personas en 167 viviendas habitadas. El centro de población está en 31.31143,-113.52133, a 32 m del punto. Es coherente co"
+  },
+  {
+   "nombre": "Lagos y Ríos",
+   "lat": 31.328,
+   "lng": -113.5231,
+   "radio": 300,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "corregida",
+   "limites": "Este: Blvd. Josefa Ortiz de Domínguez, desde la Calle Adolfo López Mateos hasta su unión con el Blvd. Benito Juárez (~31.343, gasolinera La Cuchilla). Noroeste/oeste: Blvd. Benito Juárez García (carretera a Sonoyta) hasta la central de autobuses. Sur: Calle Andrés Rosales (de Benito Juárez a Juventino Rosas), luego la prolongación de Juventino Rosas hasta la Calle 27 (Blvd. Alejandro Sobarzo Loaiza), la Calle 27 hasta Hermenegildo Galeana, Galeana hasta Adolfo López Mateos y López Mateos hasta Josefa Ortiz. Es una cuña de ~1.9 km de norte a sur (~69 ha) que incluye Sam's Club y Bodega Aurrera. Donde más se usa el nombre es entre la Calle 26 y la Calle 27, de Josefa Ortiz a Galeana (~31.3286,-113.5221).",
+   "fuentes": [
+    {
+     "tipo": "Polígono KML (directorio de códigos postales heraldo.com.mx)",
+     "detalle": "'Lagos y Ríos, CP 83556': ~68.6 ha, centroide 31.33375,-113.52479. Sus límites coinciden con calles de OSM y contiene a los 10 negocios del DENUE que declaran la colonia.",
+     "url": "https://www.heraldo.com.mx/v2/cache/kml/83556_lagos-y-rios.kml"
+    },
+    {
+     "tipo": "Directorio de CP con mapa",
+     "detalle": "Ficha de la colonia. El centro del mapa es 31.33375,-113.52479.",
+     "url": "http://www.heraldo.com.mx/sonora/puerto-penasco/83556/lagos-y-rios/"
+    },
+    {
+     "tipo": "Directorio de CP (geocodificación)",
+     "detalle": "Punto 31.3323072,-113.5237437, dentro del polígono.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/lagos-y-rios/"
+    },
+    {
+     "tipo": "Directorio de localidades",
+     "detalle": "Coordenadas 31.33374905,-113.52479407, iguales al centroide. La página también da distancias a 19 negocios; triangulándolas resulta el mismo punto (31.3338,-113.5248).",
+     "url": "https://mexico.pueblosamerica.com/ii/lagos-y-rios"
+    },
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "Diez negocios declaran 'Lagos y Ríos', 'Lagos' o 'Lo Lagos y Ríos': Agua Purificada San Martín, Electrónica Universal, Mario Pizza, VIP Market, Iglesia El Señor es el Salvador, Birriería Las Brisas, Car Wash El Vergel, Estación de carburación Isla Sobarzo, Profitness Gym y Tienda Antony. Están en Josefa Ortiz entre 26 y 27, en la Calle 27 entre Iturbide y Josefa Ortiz y en Iturbide entre 26 y 27, todos dentro del polígono. Al norte de la Calle 27, los negocios dentro del polígono escriben 'Deportiva' (25); al norte de López Portillo, 'Brisas' (15).",
+     "url": null
+    }
+   ],
+   "notaVerificador": "El punto propuesto (31.3338,-113.5248) no se sostiene. Lo muevo 661 m al sur. (1) Queda encima de otra colonia: en la capa COLONIA vigente del INE, descargada en vivo, cae dentro del polígono 'NUEVA AURORA' (pieza oriente, 32 ha) y a 126 m del de 'MAEVA RESIDENCIAL'. (2) En 'cerca 300 m' ningún negocio declara Lagos y Ríos: 5 dicen Colosio, 2 Deportiva, 1 Nueva Aurora y 1 Brisas del Golfo. (3) El polígono del heraldo (68.6 ha) es una versión vieja. El INE actual lo parte en dos piezas, con Nueva Aurora (32 ha) y Maeva (4.3 ha) en medio. La pieza SUR mide 7.7 ha y tiene centroide 31.32778,-113."
+  },
+  {
+   "nombre": "Las Conchas",
+   "lat": 31.29,
+   "lng": -113.484,
+   "radio": 2400,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "ajustada en la revisión de conjunto: fichas inmobiliarias, OpenStreetMap y polígono de localidad del INEGI",
+   "limites": "Franja de playa de ~7.5 km al sureste de la ciudad, entre la playa (Av. Viento del Mar) y el Camino a Las Conchas, con un ancho de 200 a 1,000 m (incluye Av. de las Colinas y la zona del CEDO). Extremo oeste: donde el Blvd. Fremont se vuelve Camino a Las Conchas y gira al sur (CETMAR, caseta y oficina administrativa, ≈31.2955,-113.5222). Extremo este: Tessoro, junto al Estero Morúa (≈31.2820,-113.4447). El círculo de 3.8 km también cubre mar y desierto, y roza el extremo este de Fremont (Misión del Mar). Para asignar reportes conviene usar la franja entre esos dos extremos.",
+   "fuentes": [
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Nodo place=village 'Las Conchas' en 31.28918,-113.4869. Su red de calles (Camino a Las Conchas, Av. Viento del Mar de 7.6 km, Av. de las Colinas…) va de -113.5224 a -113.4447 de longitud y de 31.2820 a 31.2965 de latitud; centroide 31.29005,-113.48876.",
+     "url": "https://www.openstreetmap.org/node/336176492"
+    },
+    {
+     "tipo": "Web: Wikipedia",
+     "detalle": "'Las Conchas, Mexico': coordenadas 31.2892,-113.4875; comunidad del este del municipio con el Estero Morúa al lado (sede de CEDO).",
+     "url": "https://en.wikipedia.org/wiki/Las_Conchas,_Mexico"
+    },
+    {
+     "tipo": "Web: micodigopostal.org (mapa de la colonia)",
+     "detalle": "Pin de Las Conchas, CP 83554, en 31.2890827,-113.4820745, a mitad de la franja.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/las-conchas/"
+    },
+    {
+     "tipo": "DENUE INEGI (abril 2026, datos locales)",
+     "detalle": "10 negocios 'LAS CONCHAS' dentro de la franja: CETMAR, Oficina Administrativa de Las Conchas, Chuy's y tiendas junto a la caseta, CEDO, The Village in Las Conchas y Tessoro at Las Conchas (31.28138,-113.44609).",
+     "url": "https://www.inegi.org.mx/app/mapa/denue/"
+    },
+    {
+     "tipo": "Web: inmobiliaria",
+     "detalle": "Mexhome describe Las Conchas como comunidad cerrada de casas frente al mar, con unas cinco millas de playa.",
+     "url": "https://mexhome.com/area/puerto-penasco/las-conchas/"
+    },
+    {
+     "tipo": "Web: noticias locales",
+     "detalle": "Rocky Point Times: el Blvd. Fremont corre de este a oeste y lleva hacia Las Conchas.",
+     "url": "https://rptimes.com/?p=8408"
+    }
+   ],
+   "notaVerificador": "No hay negocios del DENUE a 300 m: es una zona de casas de temporada. Evidencia independiente: (1) El Marco Geoestadístico 2024 del INEGI tiene la localidad 'Las Conchas' (CVEGEO 260480090, rural amanzanada). Su polígono mide 211.8 ha, va de 31.2808 a 31.2986 y de -113.5216 a -113.4454, y su centroide (31.28897,-113.48465) está a 130 m del punto. El vértice más lejano está a 3,802 m, así que el radio de 3.8 km cubre toda la franja. (2) El polígono 'Las Conchas' de Wikimapia tiene su centro a 85 m (31.28942,-113.48341) y va de -113.5232 a -113.4436. Comprobé Wikipedia (31.2892,-113.4875), el no"
+  },
+  {
+   "nombre": "Las Cúpulas Residencial",
+   "lat": 31.32954,
+   "lng": -113.52788,
+   "radio": 90,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Manzana cerrada de unas 1.6 ha. Norte: Calle Silvestre Revueltas. Sur: Calle George Bizet. Oeste: Calle 25 Rodolfo Campodónico. Este: Av. 26 Francisco González Bocanegra. La Calle Richard Strauss la atraviesa como privada interna, con entradas desde Rodolfo Campodónico y desde Francisco González Bocanegra. Esquinas aproximadas: 31.33007,-113.52861 / 31.33014,-113.52724 / 31.32902,-113.52717 / 31.32891,-113.52849.",
+   "fuentes": [
+    {
+     "tipo": "Cartografía oficial (INE)",
+     "detalle": "Servicio WMS de la cartografía electoral del INE, capa COLONIA. Dibuja y rotula 'LAS CUPULAS RESIDENCIAL' entre Silvestre Revueltas, George Bizet, Rodolfo Campodónico y Francisco González Bocanegra. Es la única aparición del nombre en toda la ciudad.",
+     "url": "https://cartografia.ine.mx/wms/index?resource=wnacional&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=COLONIA,VIALIDAD&STYLES=&SRS=EPSG:4326&BBOX=-113.5315,31.3262,-113.5262,31.3315&WIDTH=1400&HEIGHT=1400&FORMAT=image/png"
+    },
+    {
+     "tipo": "INEGI Marco Geoestadístico 2024 (ejes de vialidad)",
+     "detalle": "La Calle Richard Strauss se corta justo en esta manzana (vialidad 00411 termina en 31.32964,-113.52857 y la 00593 empieza en 31.32965,-113.52722). Dos 'Privada Ninguno' (00993 y 00994) entran a la manzana por ese eje: es la forma típica de un fraccionamiento cerrado.",
+     "url": "https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/geografia/marcogeo/794551132173/26_sonora.zip"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Richard Strauss está interrumpida entre -113.52854 y -113.52720. Dentro de la manzana hay dos vías de servicio (777687029 y 777687030). Silvestre Revueltas y George Bizet coinciden con los bordes norte y sur.",
+     "url": null
+    },
+    {
+     "tipo": "Directorio de códigos postales",
+     "detalle": "Las Cúpulas Residencial aparece como fraccionamiento urbano con CP 83556, sin ubicación. El CP coincide con la zona (Nueva Aurora/Deportiva).",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/ordenarpor=asentamiento&orden=desc/"
+    }
+   ],
+   "notaVerificador": "Intenté refutarla y no pude. (1) Volví a descargar hoy la capa COLONIA del INE en KML: hay un solo polígono 'LAS CUPULAS RESIDENCIAL' en toda la ciudad, de 1.64 ha, con centroide 31.32954,-113.52788. Coincide con la propuesta. (2) Evidencia independiente propia: en Overture Maps (lugares de Meta) aparece 'Las Cupulas', renta vacacional con dirección 'Francisco González Bocanegra, CP 83556', en 31.32960,-113.52754. Está dentro del polígono, a 33 m del punto y justo al fondo de la Privada Ninguno 00994 de INEGI. La propuesta había descartado una renta 'Cupulas' como 'sin relación', pero esta sí "
+  },
+  {
+   "nombre": "Lomas Campestres",
+   "lat": 31.3835,
+   "lng": -113.5455,
+   "radio": 750,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Fuera de la mancha urbana, al norte del Libramiento Puerto Peñasco. Va de lat ~31.3775 a ~31.390 y de lng ~-113.553 a ~-113.538. Al noreste está el aeródromo Ultraligeros del Desierto y al poniente la localidad Los Pinos (INEGI 260480291). Queda unos 1.2 km al norte del límite de Brisas del Mar y ~7.4 km al norte del centro.",
+   "fuentes": [
+    {
+     "tipo": "INEGI, Catálogo Único de Claves Geoestadísticas (localidades)",
+     "detalle": "Localidad 260480250 'Lomas Campestres', ámbito rural, en lat 31.3839006 y lng -113.5439606, con 4 habitantes y 2 viviendas habitadas.",
+     "url": "https://gaia.inegi.org.mx/wscatgeo/v2/localidades/26048"
+    },
+    {
+     "tipo": "INEGI Marco Geoestadístico (dic. 2025)",
+     "detalle": "39 manzanas de la localidad 0250 (AGEB rural 3126), entre lat 31.3778 y 31.3897 y lng -113.5531 y -113.5382. Su caja tiene centro en 31.3838,-113.5457.",
+     "url": "https://gaia.inegi.org.mx/wscatgeo/v2/geo/mza/26/048"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "El nodo place=village 'Lomas Campestres' está en 31.38459,-113.54399. Se creó en 2009 y tres editores lo reubicaron entre 2010 y 2020. Además hay una retícula de calles sin nombre al norte del Libramiento (lat 31.378 a 31.392, lng -113.551 a -113.537) que coincide con las manzanas del INEGI.",
+     "url": "https://www.openstreetmap.org/node/336176777"
+    },
+    {
+     "tipo": "PueblosAmerica (datos de censos INEGI)",
+     "detalle": "Localidad del municipio de Puerto Peñasco, a 7.4 km en línea recta al norte de la ciudad. Tenía 22 habitantes en 2010 y 4 en 2020. En 2010 había 27 viviendas y solo el 10% tenía agua entubada.",
+     "url": "https://mexico.pueblosamerica.com/i/lomas-campestres/"
+    },
+    {
+     "tipo": "Anuncio inmobiliario (propiedades.com, visto en buscador)",
+     "detalle": "Terreno de 1,964 m² en 'Col. Lomas Campestres, Puerto Peñasco, CP 83556' (ID 29035390, 11,100 USD). Corresponde a lotes grandes de tipo campestre. No trae dirección exacta y el sitio bloqueó la consulta directa.",
+     "url": "https://propiedades.com/villas-de-altar-puerto-penasco/terrenos-habitacionales-venta"
+    },
+    {
+     "tipo": "SEPOMEX (vía micodigopostal.org)",
+     "detalle": "Aparece como 'Lomas Campestres', Colonia, CP 83556.",
+     "url": "https://micodigopostal.org/codigo-postal/83556/"
+    },
+    {
+     "tipo": "DENUE (INEGI)",
+     "detalle": "Ningún negocio declara esta colonia. En 2.5 km alrededor del punto solo hay una blokera de Brisas del Mar.",
+     "url": null
+    }
+   ],
+   "notaVerificador": "Intenté demostrar que el punto está mal y no lo logré. (1) Catálogo de localidades del INEGI (consultado directamente): localidad 260480250 'Lomas Campestres', rural, en 31.3839006,-113.5439606, con 4 habitantes y 2 viviendas habitadas. El punto propuesto está a ~150 m. (2) Descargué sus manzanas (mza/26/048/0250): son 39, de la AGEB 3126, entre lat 31.37775 y 31.38974 y entre lng -113.55314 y -113.53817. El centro de la caja (31.38374,-113.54566) está a ~30 m del punto; con 750 m se cubre el 90% de las manzanas (bastarían 730 m). (3) Historia del nodo OSM 336176777: se creó en 2009 en 31.3856"
+  },
+  {
+   "nombre": "Los Delfines",
+   "lat": 31.26989,
+   "lng": -113.37148,
+   "radio": 300,
+   "confianza": "media",
+   "limiteOficial": false,
+   "verificacion": "confirmada",
+   "limites": "Corredor costero de Playa Encanto, fuera de la mancha urbana, unos 500 m al oeste de Encántame Towers. Calles: Blvd. Los Delfines, Calle Las Sirenas, Calle Las Olas y Paseo Mar de Cortez. Manzanas con letra (B, C, D, F). Los lotes anunciados quedan entre lat 31.2691 y 31.2703, lng -113.3720 y -113.3708.",
+   "fuentes": [
+    {
+     "tipo": "MLS de Playa Sonora Realty",
+     "detalle": "Lote MD-L1, Blvd. Los Delfines, Playa Encanto. Campo 'Subdivision': Los Delfines. Coordenadas 31.269929,-113.37133.",
+     "url": "https://www.playasonorarealty.com/property/26-570/"
+    },
+    {
+     "tipo": "MLS de Playa Sonora Realty",
+     "detalle": "Lote MB-L8, Blvd. Los Delfines, Playa Encanto. 'Subdivision': Los Delfines. Coordenadas 31.270249,-113.372003. Los lotes MB-L9 a L12, MC-L5 a L8 y MD-L2 a L3 (fichas 26-562 a 26-572) forman una cuadrícula coherente alrededor de 31.2699,-113.3715.",
+     "url": "https://www.playasonorarealty.com/property/26-561/"
+    },
+    {
+     "tipo": "MLS de Playa Sonora Realty",
+     "detalle": "Lote MF-L1, Calle Las Olas. 'Subdivision': Los Delfines. Coordenadas 31.269117,-113.372021.",
+     "url": "https://www.playasonorarealty.com/property/26-575/"
+    },
+    {
+     "tipo": "Overture Maps (fuente Meta)",
+     "detalle": "Casa de renta con domicilio 'Paseo Mar de Cortez Playa Encanto Block F, Los Delfines, Lot 2', CP 83566. El punto del registro está mal geocodificado dentro de la ciudad, pero el domicilio confirma el fraccionamiento.",
+     "url": "https://www.facebook.com/1312265171969189"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Referencia: Encántame Towers (way 1236116798) en 31.2694,-113.3663, unos 500 m al este.",
+     "url": "https://www.openstreetmap.org/way/1236116798"
+    },
+    {
+     "tipo": "SEPOMEX (vía micodigopostal)",
+     "detalle": "Fraccionamiento, CP 83554, zona urbana. No corresponde a su ubicación física.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/ordenarpor=codigo_postal&orden=asc/"
+    }
+   ],
+   "notaVerificador": "Confirmo la ubicación. Abrí las 15 fichas del MLS (26-561 a 26-575). Todas dicen 'Subdivision: Los Delfines' y forman una cuadrícula ordenada por manzana (MB, MC, MD, MF). El centroide de los lotes, 31.26979,-113.37150, está a 11 m del punto. Busqué una fuente independiente y la encontré en el anuncio de Airbnb de 'Casa de la Abuela', el mismo de la dirección que trae Overture. El anfitrión publica 'GPS Coordinates: 31.269071, -113.371731' con la dirección 'Paseo Mar de Cortez, Block F, Los Delfines, Lot 2, Playa Encanto, 83566', y dice que está a 5 minutos a pie de Encántame Towers. Ese punto"
+  },
+  {
+   "nombre": "Los Portales",
+   "lat": 31.2673,
+   "lng": -113.3607,
+   "radio": 300,
+   "confianza": "alta",
+   "limiteOficial": false,
+   "verificacion": "confirmada",
+   "limites": "Comunidad cerrada frente al mar en el corredor de Playa Encanto, fuera de la mancha urbana. Está unos 500 m al este de Encántame Towers, al oeste de Puerta al Mar, Sandy Castle y Playa Azul. Calles internas: Portal del Sol y Portal del Mar. Los lotes van de lng -113.3616 a -113.3589, con lat ~31.267.",
+   "fuentes": [
+    {
+     "tipo": "INEGI, catálogo de localidades",
+     "detalle": "Localidad rural 'Los Portales', CVEGEO 260480303, dada de alta en 2017, en 31.2670714,-113.3607239.",
+     "url": "https://gaia.inegi.org.mx/wscatgeo/v2/localidades/26048"
+    },
+    {
+     "tipo": "MLS de Playa Sonora Realty",
+     "detalle": "LOTE FB-4 Mz E, Portal del Sol. 'Subdivision': Los Portales. Coordenadas 31.267362,-113.361361. El anuncio la describe como comunidad cerrada frente al mar 'a corta distancia de Encantame Towers y Playa Azul'.",
+     "url": "https://www.playasonorarealty.com/property/25-439/"
+    },
+    {
+     "tipo": "MLS de Playa Sonora Realty",
+     "detalle": "Lote MC LOV2, Los Portales, Playa Encanto. 'Subdivision': Los Portales. Coordenadas 31.26769,-113.361648.",
+     "url": "https://www.playasonorarealty.com/property/25-57/"
+    },
+    {
+     "tipo": "MLS de Playa Sonora Realty",
+     "detalle": "Lote MD LOV-5, Portal del Mar. 'Subdivision': Los Portales. Coordenadas 31.267076,-113.358945.",
+     "url": "https://www.playasonorarealty.com/property/24-140/"
+    },
+    {
+     "tipo": "Propiedades.com",
+     "detalle": "'Casa en LOS PORTALES FB 8, Playa Encanto, Sonora'. Anuncio vencido; solo se vio en los resultados de búsqueda porque la página no cargó.",
+     "url": "https://propiedades.com/inmuebles/casa-en-venta-los-portales-fb-8-playa-encanto-sonora-5863430"
+    },
+    {
+     "tipo": "icasas (indicio débil, descartado)",
+     "detalle": "Da la dirección 'Los Portales, Las Conchas, 83554' para una casa frente al mar en Las Conchas. Lo más probable es que sea la colonia escogida de la lista del CP.",
+     "url": "https://www.icasas.mx/propiedad/383f-a93c-19842ae-73cc520c2dda-7c83"
+    },
+    {
+     "tipo": "SEPOMEX (vía micodigopostal)",
+     "detalle": "Fraccionamiento, CP 83554, zona urbana. No corresponde a su ubicación física.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/ordenarpor=codigo_postal&orden=asc/"
+    }
+   ],
+   "notaVerificador": "Confirmo y subo la confianza a alta. Volví a consultar el catálogo del INEGI. 'Los Portales' (260480303) existe como localidad rural en 31.2670714,-113.3607239, dada de alta en 2017. También aparece en el Marco Geoestadístico 2024 (capa 26lpr). El punto propuesto queda a unos 25 m. Abrí las 3 fichas del MLS. Dicen 'Subdivision: Los Portales', con calles Portal del Sol y Portal del Mar, y la describen como comunidad cerrada frente al mar 'a corta distancia de Encantame Towers y Playa Azul'. El centroide de los lotes, 31.26738,-113.36065, está a unos 10 m del punto. La geografía cuadra con otras"
+  },
+  {
+   "nombre": "Luis Donaldo Colosio",
+   "lat": 31.3299,
+   "lng": -113.5141,
+   "radio": 800,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Oeste: Blvd. Josefa Ortiz de Domínguez; la acera oeste ya es Deportiva o Lagos y Ríos. Este: Blvd. Rafael Godoy Cisneros (Calle 47); una franja sobre la Calle 27 Sobarzo llega hasta la Calle 53. Norte: Blvd. José López Portillo; al otro lado está Brisas del Golfo. Sur: Calle 25 Adolfo López Mateos o Lázaro Cárdenas del Río; entre Eduardo Ibarra y Marcelo Pino llega hasta Juan Aldama, y más al sur empieza Oriente. Calles de norte a sur: Tecia Viuda de Bustamante, Julián Bustamante (34), Enriqueta de Tena (35), Esteban Pivac (36), Guillermo Munro, Lucero Viuda de Morúa, Marcelo Pino, Oriente (40), Eduardo Ibarra (41), De los Ángeles, 2 de Noviembre, 20 de Noviembre, Rocaportense, De los Ríos (45) y Alejandro Sobarzo (46). Calles de este a oeste: Río Mayo (30), Río Fuerte (31), Río Yaqui (29), Río Colorado (28), Calle 27 Sobarzo y Calle 26.",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "137 negocios con 6 formas de escribir el nombre: COLOCIO 67, COLOSIO 59, DOLONALDO COLOCIO 6, CASA COLOCIO 3, DESOLADO 1 y LUIS D COLOCIO 1. CP 83553 u 83550. Están entre Blvd. Josefa Ortiz y Blvd. Godoy Cisneros, de López Mateos / Lázaro Cárdenas a López Portillo. En tres AGEB casi todos dicen Colosio: 272A (23 de 25), 258A (31 de 33) y 2753 (15 de 15). Mediana: 31.32899,-113.51281.",
+     "url": null
+    },
+    {
+     "tipo": "DENUE (frontera con Oriente)",
+     "detalle": "En la AGEB 2749, que es el centro de la colonia (Rocaportense, 20 de Noviembre, Calle 27 entre Rocaportense y Lucero), 25 negocios dicen ORIENTE y 12 dicen Colosio. El límite con Oriente no es nítido.",
+     "url": null
+    },
+    {
+     "tipo": "OpenStreetMap (calles)",
+     "detalle": "Cruces que marcan el límite: Josefa Ortiz × López Mateos en 31.32605,-113.52164; Godoy × Lázaro Cárdenas en 31.32588,-113.50741; Godoy × López Portillo en 31.33504,-113.50763; Josefa Ortiz × López Portillo en 31.33415,-113.52212. Centro de la red de calles del polígono: 31.32995,-113.51404. OSM no tiene punto para esta colonia.",
+     "url": null
+    },
+    {
+     "tipo": "Expedia (descartado)",
+     "detalle": "Tiene un barrio llamado 'Luis Donaldo Colosio', pero le asigna hoteles de playa (Blvd. Costero, Paseo Balboa). No sirve para ubicar la colonia.",
+     "url": "https://www.expedia.com/Puerto-Penasco-Luis-Donaldo-Colosio.dx553248635976400211"
+    }
+   ],
+   "notaVerificador": "Confirmada con una fuente independiente: el polígono LUIS DONALDO COLOSIO de la capa COLONIA del INE (200 ha). Norte: Blvd. José López Portillo. Oriente: Blvd. Godoy Cisneros hasta Juan Aldama. Sur: Juan Aldama, Av. Roca Portense y Calle 20 Simón Morúa (~31.3205). Poniente: Blvd. Josefa Ortiz de Domínguez. El punto propuesto queda dentro, a 224 m del centro de área del INE (31.32795,-113.51474) y a 297 m del centro de su red de calles (31.32725,-113.51460). La mediana de los 111 negocios Colosio dentro del polígono (31.32901,-113.51405) queda a 100 m. A 300 m: 11 Colosio, 6 Oriente y 1 Nuevo P"
+  },
+  {
+   "nombre": "Maeva Residencial",
+   "lat": 31.3327,
+   "lng": -113.52447,
+   "radio": 190,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Privada con vigilancia, de unas 4.3 ha, en forma de franja diagonal. Norte: Blvd. José López Portillo (solo la esquina noroeste da al bulevar; el resto del lado norte sigue la diagonal de la Calle Maeva). Oeste: prolongación de Av. Juventino Rosas, la calle que sube hacia Sam's Club y Bodega Aurrera. Este: calle Del Eco, unos 100 m al poniente del Blvd. Josefa Ortiz de Domínguez. Sur: calle sin nombre que colinda con Nueva Aurora. Calles internas: Maeva, Fenua, Vai (o 'Fai'), Iriki, Miti y Tiare. Vértices aproximados: 31.33383,-113.52605 / 31.33284,-113.52291 / 31.33162,-113.52282 / 31.33241,-113.52591.",
+   "fuentes": [
+    {
+     "tipo": "Cartografía oficial (INE)",
+     "detalle": "Servicio WMS de la cartografía electoral del INE, capas COLONIA y VIALIDAD. Polígono 'MAEVA RESIDENCIAL' con las calles internas FENUA, VAI, MAEVA, IRIKI, MITI y TIARE, limitado por Juventino Rosas, Del Eco y el Blvd. José López Portillo. Esta misma capa rotula casi todas las colonias de la ciudad y sirve para verificar las demás. Vista de toda la ciudad guardada en (archivo de trabajo)",
+     "url": "https://cartografia.ine.mx/wms/index?resource=wnacional&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=COLONIA,VIALIDAD&STYLES=&SRS=EPSG:4326&BBOX=-113.5275,31.3305,-113.5215,31.3350&WIDTH=1400&HEIGHT=1050&FORMAT=image/png"
+    },
+    {
+     "tipo": "INEGI Marco Geoestadístico 2024 (ejes de vialidad)",
+     "detalle": "Calle Maeva (vialidad 07305) va de 31.33337,-113.52599 a 31.33175,-113.52310. En el mismo polígono están Calle Fenua (07306), Calle Iriki (07308) y Calle Miti (07423). Los ejes de Puerto Peñasco ya convertidos a lat/lng quedaron en (archivo de trabajo)",
+     "url": "https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/geografia/marcogeo/794551132173/26_sonora.zip"
+    },
+    {
+     "tipo": "DENUE (INEGI)",
+     "detalle": "INMOBILIARIA BASAEL, la desarrolladora de Maeva, está en Blvd. José López Portillo 319, col. Nueva Aurora (31.33388,-113.52399), pegada al lado norte del polígono.",
+     "url": null
+    },
+    {
+     "tipo": "Sitio de la desarrolladora (visto en resultados de búsqueda; hoy da 404)",
+     "detalle": "Residencial Maeva de Basael: 115 terrenos (lote de 260 m²), modelos Maeva, Maeva Plus, Moana y Atua, alberca y vigilancia. Dirección: 'Lagos y Ríos', la colonia vecina al norte del bulevar.",
+     "url": "https://www.basael.com/maevaresidencial"
+    },
+    {
+     "tipo": "Anuncio Airbnb",
+     "detalle": "'Casa de Maui Maeva Residencial': privada con seguridad 24 h, cerca de supermercados. Coordenadas en la página: 31.33201,-113.52619, a unos 200 m del centroide (Airbnb desplaza el punto). HiChee repite las mismas coordenadas.",
+     "url": "https://sk.airbnb.com/rooms/49592269"
+    },
+    {
+     "tipo": "Anuncio inmobiliario",
+     "detalle": "Casa #13 en 'the prestigious guard-gated community of Maeva Residencial', frente a las áreas comunes (alberca, parque, cancha).",
+     "url": "https://sonoranprime.com/residencial-maeva-13"
+    },
+    {
+     "tipo": "Directorio de códigos postales",
+     "detalle": "Maeva Residencial aparece como fraccionamiento con CP 83556, sin ubicación en mapa.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/maeva-residencial/"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Trama de calles residenciales sin nombre en el mismo lugar, trazadas por etapas en 2020, 2021 y 2024 (vías 777690117, 971655805, 971655806 y 1256493621 a 1256493623). Sam's Club (31.33545,-113.52541) y Bodega Aurrera quedan unos 250 m al norte.",
+     "url": null
+    }
+   ],
+   "notaVerificador": "(1) La capa COLONIA del INE, descargada hoy, tiene un solo polígono 'MAEVA RESIDENCIAL' de 4.28 ha, con centroide 31.33270,-113.52447 (vértice más lejano a 198 m). (2) Evidencia independiente propia: en Overture/Meta está 'STARFISH Maeva Residencial', servicio inmobiliario con correo ventas.maeva@basael.com, web maevaresidencial.com y teléfono +52 638 380 8058, en 31.33288,-113.52550. Está dentro del polígono, a unos 100 m del centroide. Esto une a la desarrolladora Basael con el lugar. (3) Comprobé en los ejes del Marco Geoestadístico 2024 que Calle Maeva (07305), Fenua (07306), Iriki (07308)"
+  },
+  {
+   "nombre": "Mariposa Residencial",
+   "lat": 31.32761,
+   "lng": -113.52936,
+   "radio": 120,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Privada de unas 2.7 ha. Norte: Calle 27 Alejandro Sobarzo Loaiza. Este: Calle 25 Rodolfo Campodónico. Sur: Calle 26 (No Reelección), frente a la Unidad Deportiva. Oeste: calle sin nombre (vialidad INEGI 07428, cerca de -113.5303). Acceso único por la Cerrada Aviana desde la Calle 26 (31.32691,-113.52988). La Cerrada Aviana forma un circuito interno. Esquinas aproximadas: 31.32842,-113.53027 / 31.32835,-113.52846 / 31.32699,-113.52837 / 31.32687,-113.53031.",
+   "fuentes": [
+    {
+     "tipo": "Cartografía oficial (INE)",
+     "detalle": "Servicio WMS de la cartografía electoral del INE, capas COLONIA y VIALIDAD. Polígono 'MARIPOSA RESIDENCIAL' entre la Calle 27 Alejandro Sobarzo Loaiza, la Calle 25 Rodolfo Campodónico y la Calle 26 No Reelección, con calles internas 'SIN NOMBRE'. Es la única aparición del nombre en la ciudad.",
+     "url": "https://cartografia.ine.mx/wms/index?resource=wnacional&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=COLONIA,VIALIDAD&STYLES=&SRS=EPSG:4326&BBOX=-113.5320,31.3258,-113.5272,31.3294&WIDTH=1400&HEIGHT=1050&FORMAT=image/png"
+    },
+    {
+     "tipo": "INEGI Marco Geoestadístico 2024 (ejes de vialidad)",
+     "detalle": "Dentro del polígono está la 'Cerrada Aviana' (vialidades 00803 y 00804): un circuito cerrado de 31.3272 a 31.3280 y de -113.5287 a -113.5300, con su única entrada desde la Calle 26.",
+     "url": "https://www.inegi.org.mx/contenidos/productos/prod_serv/contenidos/espanol/bvinegi/productos/geografia/marcogeo/794551132173/26_sonora.zip"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Mismo circuito interno sin nombre (vías 777683129, 971981074 y 971981075), en 31.3272-31.3280 y -113.5288 a -113.5299.",
+     "url": null
+    },
+    {
+     "tipo": "DENUE (INEGI)",
+     "detalle": "Negocios sobre la Calle 26/No Reelección se ubican 'entre Aviana y Benito Juárez García' (31.32690,-113.53049 y 31.32694,-113.53022), lo que confirma la entrada por la Cerrada Aviana. Ningún negocio declara Mariposa.",
+     "url": null
+    },
+    {
+     "tipo": "Directorio de códigos postales",
+     "detalle": "Mariposa Residencial aparece como fraccionamiento con CP 83556; la página dice que no tiene ubicación.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/mariposa-residencial/"
+    }
+   ],
+   "notaVerificador": "(1) La capa COLONIA del INE, descargada hoy, tiene un solo 'MARIPOSA RESIDENCIAL' de 2.71 ha, con centroide 31.32762,-113.52937 (vértice más lejano a 122 m). La manzana interior del INE (2038647, dentro del circuito) tiene centroide 31.32762,-113.52940. (2) Evidencia independiente propia: la página https://www.heraldo.com.mx/sonora/puerto-penasco/83556/mariposa-residencial/ (descargada hoy) muestra un lugar de Foursquare llamado 'Mariposa Residencial', categoría complejo habitacional, en 31.32777,-113.52941, a 18 m del punto. El mapa de la página está centrado en 31.32723,-113.52944, a 43 m. A"
+  },
+  {
+   "nombre": "Nueva",
+   "lat": 31.3471,
+   "lng": -113.5449,
+   "radio": 600,
+   "confianza": "media",
+   "limiteOficial": true,
+   "verificacion": "corregida",
+   "limites": "No tiene límites propios conocidos. Los domicilios con el nombre 'Nueva' caen dentro de la colonia Nueva Esperanza, entre Blvd. Samuel Ocaña (sur), Calle Agua Prieta (norte), Av. Juan de la Barrera (oriente) y Gustavo Sotelo / Av. Constitución (poniente).",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "Dos negocios declaran 'NUEVA': el OXXO Suc. Guaymas (Av. Constitución esq. Guaymas 429, CP 83556) en 31.3446,-113.5419 y el TKT Six TS Express Market III (Blvd. Samuel Ocaña 401) en 31.3413,-113.5458. Un tercero declara 'COLONIA NUEVA NUEVA': un taller de motos en Calle Caborca entre Puerto de Ensenada y Vicente Suárez, en 31.3501,-113.5326. Los tres quedan dentro de Nueva Esperanza. En 500 m alrededor del OXXO, 110 negocios declaran Nueva Esperanza y solo uno 'Nueva'.",
+     "url": null
+    },
+    {
+     "tipo": "Anuncios inmobiliarios (propiedades.com, vistos en buscador)",
+     "detalle": "Uno dice 'Venta de casa JUAN DE LA BARRERA SONOYTA Y GAYMAS #432, Col. Nueva'; el cruce Juan de la Barrera con Sonoyta/Guaymas da 31.3454,-113.5391. Otro ofrece un terreno en 'Nueva' cerca de Agua Prieta y Cuauhtémoc (≈31.3480,-113.5408). El sitio bloqueó la consulta directa, así que solo vi el texto del buscador.",
+     "url": "https://propiedades.com/nueva-puerto-penasco/casas"
+    },
+    {
+     "tipo": "SEPOMEX (vía micodigopostal.org)",
+     "detalle": "'Nueva' y 'Nueva Esperanza' aparecen como dos colonias distintas del CP 83556.",
+     "url": "https://micodigopostal.org/codigo-postal/83556/"
+    },
+    {
+     "tipo": "OpenStreetMap / Nominatim",
+     "detalle": "No hay ningún lugar llamado 'Nueva' en OSM. Al buscar 'Nueva' en Nominatim solo aparece el suburbio Nueva Esperanza (31.3450,-113.5361).",
+     "url": null
+    }
+   ],
+   "notaVerificador": "La propuesta acierta en que los negocios que declaran 'NUEVA' están en el poniente de la zona de Nueva Esperanza. Se equivoca al concluir que no existe una colonia Nueva aparte y en los límites que le da. Fuente independiente nueva: la capa COLONIA del INE tiene un polígono 'NUEVA' de 82.6 ha, distinto del de 'NUEVA ESPERANZA' (297 ha, al oriente). Como SEPOMEX también las lista por separado, son dos catálogos oficiales que coinciden. Límites según el INE: al sur, Blvd. Samuel Ocaña García (Calle 40) y Blvd. Silvestre Gustavo Brown Gavaldón (lat ~31.341); al oriente, Av. Francisco I. Madero (l"
+  },
+  {
+   "nombre": "Nueva Aurora",
+   "lat": 31.32847,
+   "lng": -113.53011,
+   "radio": 490,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "ajustada en la revisión de conjunto: centro de su polígono del INE (suroeste); revisión de conjunto",
+   "limites": "Norte: Calle Andrés Rosales. Oeste: Blvd. Benito Juárez García (carretera a Sonoyta), de la Calle 26 a la central de autobuses. Sur: Calle 26 (de Benito Juárez a Rodolfo Campodónico) y Calle 27 / Blvd. Alejandro Sobarzo Loaiza (de Campodónico a Juventino Rosas). Este: prolongación de la Av. Juventino Rosas. Incluye el COBACH plantel Puerto Peñasco, el Instituto Municipal del Deporte y las calles Richard Strauss, George Bizet, Silvestre Revueltas, Manuel M. Ponce, González Bocanegra y Campodónico (~23 ha).",
+   "fuentes": [
+    {
+     "tipo": "Polígono KML (directorio de códigos postales heraldo.com.mx, catálogo anterior)",
+     "detalle": "'Colonia Nueva Aurora, CP 83553': ~23 ha, centroide 31.32894,-113.52898. Sus límites coinciden con calles de OSM.",
+     "url": "https://www.heraldo.com.mx/v2/cache/kml/83553_nueva-aurora.kml"
+    },
+    {
+     "tipo": "Directorio de CP con mapa",
+     "detalle": "La entrada CP 83553 tiene el polígono. La entrada CP 83556 no tiene KML y su mapa se centra en 31.3357,-113.5426 (zona López Portillo/Nueva Esperanza), un punto sin respaldo.",
+     "url": "http://www.heraldo.com.mx/sonora/puerto-penasco/83553/nueva-aurora/"
+    },
+    {
+     "tipo": "Directorio de CP (catálogo vigente)",
+     "detalle": "Fraccionamiento Nueva Aurora, CP 83556, urbano. El sitio dice 'Actualmente no contamos con esta ubicación'.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/nueva-aurora/"
+    },
+    {
+     "tipo": "Directorio de localidades",
+     "detalle": "Coordenadas 31.32893853,-113.52897592, iguales al centroide del polígono.",
+     "url": "https://mexico.pueblosamerica.com/ii/nueva-aurora-4"
+    },
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "El Instituto Municipal del Deporte está registrado en 'Calle Sufragio Efectivo entre NUEVA AURORA y Benito Juárez García' (31.32784,-113.53167, CP 83556), dentro del polígono. Autobuses Albatros (Blvd. Benito Juárez entre López Portillo y Richard Strauss; 31.33050,-113.53055) declara Nueva Aurora y está a 10 m de la esquina noroeste. Inmobiliaria Basael (Blvd. López Portillo 319; 31.33388,-113.52399) también la declara, pero queda ~380 m al NE, dentro de Lagos y Ríos. Los 19 negocios dentro del polígono escriben 'Deportiva', casi todos con CP 83556.",
+     "url": null
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Dentro del polígono están el Colegio de Bachilleres (COBACH) plantel Puerto Peñasco (31.32933,-113.53025) y las calles con nombres de compositores.",
+     "url": null
+    },
+    {
+     "tipo": "Anuncio inmobiliario (resultado de búsqueda)",
+     "detalle": "Casa en venta en 'Nueva Aurora, 83556 Puerto Peñasco' (4 recámaras). Confirma que el nombre se usa en direcciones, pero no da calle. La página no cargó.",
+     "url": "https://propiedades.com/nueva-aurora-puerto-penasco-83556/"
+    }
+   ],
+   "notaVerificador": "El punto sirve, pero hay que corregir los límites descritos. (1) Fuente propia: en la capa COLONIA vigente del INE, descargada en vivo, el punto cae dentro de 'NUEVA AURORA' (pieza poniente, 12.2 ha, centroide 31.32847,-113.53011, a 116 m). Es la zona del COBACH y del Instituto Municipal del Deporte. Las dos versiones de la cartografía (heraldo vieja e INE actual) coinciden en esta pieza. (2) El INE le asigna además una pieza ORIENTE más grande, de 32.2 ha y centroide 31.33143,-113.52586. Va de Richard Strauss/Calle 27 al Blvd. José López Portillo y del Blvd. Benito Juárez al Blvd. Josefa Orti"
+  },
+  {
+   "nombre": "Nueva Esperanza",
+   "lat": 31.3463,
+   "lng": -113.5352,
+   "radio": 800,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "corregida",
+   "limites": "Sur: Blvd. Samuel Ocaña García (≈31.342). En la parte poniente baja hasta Eustaquio Amador (≈31.336), entre la vía y Av. Cuauhtémoc/Juan de la Barrera. Norte: Calle 48/Quincuagésima (≈31.351-31.352); después siguen 4 de Marzo y Brisas del Mar. Poniente: Gustavo Sotelo/Calle 7 (≈ -113.546 a -113.548). Oriente: Puerto de Guaymas/Puerto de San Felipe (≈ -113.528). Las calles este-oeste llevan nombres de ciudades sonorenses: Hermosillo, Nogales, Guaymas, Sonoyta, Cananea, Agua Prieta, Caborca y Nacozari.",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "384 negocios: NUEVA ESPERANZA 282, COLONIA NUEVA ESPERANZA 94 y faltas de ortografía. Mediana 31.3442,-113.5382. Al norte de Samuel Ocaña hay 220 negocios NE y 0 JLP.",
+     "url": "https://www.inegi.org.mx/app/mapa/denue/"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Un place=suburb 'Nueva Esperanza' en 31.3450,-113.5361, a 218 m de la mediana del DENUE.",
+     "url": "https://www.openstreetmap.org/node/11463541101"
+    },
+    {
+     "tipo": "anuncio inmobiliario",
+     "detalle": "Dos anuncios vistos en resultados de búsqueda: uno en Calle Hermosillo esquina Av. Ferrocarril (según OSM, 31.3425,-113.5427) y un lote en Agua Prieta y Cuauhtémoc (31.3480,-113.5408). Ambos caen dentro de la zona del DENUE.",
+     "url": "https://www.vivanuncios.com.mx/s-casas/nueva_puerto-penasco_sonora"
+    },
+    {
+     "tipo": "catálogo de CP",
+     "detalle": "Nueva Esperanza, colonia urbana, CP 83556.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/nueva-esperanza/"
+    },
+    {
+     "tipo": "directorio",
+     "detalle": "PueblosAmerica da CP 83552 y '4.5 km al norte del centro'. Sus datos vienen del propio DENUE y no es confiable.",
+     "url": "https://mexico.pueblosamerica.com/ii/nueva-esperanza-15"
+    }
+   ],
+   "notaVerificador": "El punto propuesto (31.3455,-113.5380) tiene buen respaldo local: los 30 negocios a 300 m dicen NE. Pero quedó unos 280 m al poniente porque la propuesta incluyó dos zonas que oficialmente son otras colonias. (1) La franja entre la vía (-113.548) y Av. Constitución (-113.5418), de Samuel Ocaña a 31.353, es la colonia oficial 'Nueva' (CP 83556), según su polígono en heraldo.com.mx (centroide 31.3470,-113.5447; 1,285 direcciones). Los 2 negocios del DENUE que declaran 'NUEVA' están ahí: un OXXO en Constitución esq. Guaymas (31.3446,-113.5419) y Samuel Ocaña 401 entre Sinaloa y Calzada Chapultepe"
+  },
+  {
+   "nombre": "Nuevo Peñasco",
+   "lat": 31.3224,
+   "lng": -113.5006,
+   "radio": 950,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Oeste: Blvd. Rafael Godoy Cisneros (Calle 47). Este: Blvd. Las Conchas y las avenidas 57 y 58; más al este empiezan Villas de Altar y San Rafael. Norte: Calle 27 Alejandro Sobarzo Loaiza (Calle 26 José Santiago Healy en la parte oeste). Sur: Calle León de la Barra y Calle Sonora (Sexta), junto a la vía del ferrocarril (~31.315). Su eje comercial es la Calle Lázaro Cárdenas del Río (~31.326). Calles numeradas 48 a 57; de este a oeste: Juan Aldama, Benito Juárez García, Ruiz Cortines (21), Simón Morúa (20), Aquiles Serdán, Nicolás Bravo y Melchor Ocampo (Séptima).",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "262 negocios, con el nombre correcto o con 4 faltas de ortografía, casi todos con CP 83553. Están entre Blvd. Godoy Cisneros y Blvd. Las Conchas / Av. 58, desde León de la Barra hasta Sobarzo. Mediana: 31.3245,-113.50219. Cerca de mi centro, 107 de 116 negocios a 500 m dicen Nuevo Peñasco.",
+     "url": null
+    },
+    {
+     "tipo": "OpenStreetMap (nodo de colonia)",
+     "detalle": "Nodo place=suburb 'Nuevo Peñasco' en 31.32699,-113.50282, a 282 m del centro del DENUE.",
+     "url": "https://www.openstreetmap.org/node/11463541096"
+    },
+    {
+     "tipo": "Noticia (Rocky Point Times, OOMAPAS 2016)",
+     "detalle": "Nuevo Peñasco aparece, junto con San Rafael, entre las colonias del oriente que se benefician de la ampliación de la red de agua.",
+     "url": "https://rptimes.com/jim-ringquist/2016/08/work-to-extend-hydraulic-network-in-supplying-water-to-eastern-part-of-city/"
+    },
+    {
+     "tipo": "OpenStreetMap (calles)",
+     "detalle": "Centro de la red de calles dentro del polígono: 31.32240,-113.50065. Centro geométrico: 31.32220,-113.50017. Superficie de unos 2 km².",
+     "url": null
+    }
+   ],
+   "notaVerificador": "Confirmada con el INE: el punto cae dentro del polígono NUEVO PEÑASCO (330 ha), a 147 m del centro de su red de calles (31.32369,-113.50097) y a 157 m de su centro de área. Del DENUE, 38 de 39 negocios a 300 m dicen Nuevo Peñasco (con variantes). Dentro del polígono INE hay 223 negocios NP, con mediana en 31.32397,-113.50228. El nodo OSM (31.32699,-113.50282) también cae dentro. Límites según el INE, que corrigen los propuestos: poniente Blvd. Godoy Cisneros en todo su largo; nororiente Blvd. Las Conchas, desde el cruce con Godoy (~31.3388) hasta la Av. 61 (~31.3217); sur Calle 10 (~31.313). T"
+  },
+  {
+   "nombre": "Obrera",
+   "lat": 31.3302,
+   "lng": -113.547,
+   "radio": 600,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Al poniente de la vía del tren. Sur: Calle 26 No Reelección/Blvd. Costero 2000 (≈31.3255); después sigue Ferrocarrilera. Norte: Calle 35/Av. Plan de Ayala (≈31.334); más al norte no hay calles. Oriente: Av. Luis Encinas Johnson y la vía (≈ -113.5435); después sigue José López Portillo. Poniente: Calle Crescencio Rejón (≈ -113.5505). Son las calles numeradas 27 a 35, y su corredor comercial es la Avenida/Calle 32 (salida hacia Sandy Beach).",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "174 negocios 'OBRERA', mediana 31.3319,-113.5469. 68 de ellos están sobre Avenida 32.",
+     "url": "https://www.inegi.org.mx/app/mapa/denue/"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Un place=suburb 'Obrera' en 31.3315,-113.5467, a 56 m de la mediana del DENUE. Los 79 negocios a 200 m dicen OBRERA.",
+     "url": "https://www.openstreetmap.org/node/11471894088"
+    },
+    {
+     "tipo": "catálogo de CP",
+     "detalle": "Obrera, colonia urbana, CP 83555.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/obrera/"
+    },
+    {
+     "tipo": "artículo académico",
+     "detalle": "Revista Topofilia (BUAP): menciona la colonia Obrera de Puerto Peñasco como lugar donde se asentaron migrantes indígenas que trabajaban en la construcción. No da ubicación, y el PDF no se pudo abrir (404).",
+     "url": "https://topofilia.buap.mx/index.php/topofilia/article/download/82/90/194"
+    }
+   ],
+   "notaVerificador": "El punto coincide, a 6 m, con el centroide del polígono oficial de Obrera en heraldo.com.mx (31.3302,-113.5470). Ese polígono va de Calle 26 a 31.335 y de la vía a -113.5527. El punto está a 19 m de la media de sus 1,239 direcciones de Overture, todas con CP 83555. Con 'cerca 300', 103 de 104 negocios dicen OBRERA. Verifiqué el nodo OSM 'Obrera' (31.3315,-113.5467, a 141 m). micodigopostal confirma CP 83555 y zona urbana, sin ubicación. No queda encima de otra colonia: al norte no hay calles, al oriente la vía la separa de JLP (CP 83556) y al sur Calle 26 la separa de Ferrocarrilera. Con 600 m"
+  },
+  {
+   "nombre": "Oriente",
+   "lat": 31.3168,
+   "lng": -113.5257,
+   "radio": 900,
+   "confianza": "media",
+   "limiteOficial": true,
+   "verificacion": "corregida",
+   "limites": "Poniente: el Centro. Al norte de Melchor Ocampo el límite es Josefa Ortiz de Domínguez (≈ -113.521); al sur de Sonora es Abelardo L. Rodríguez/Rodolfo Campodónico (≈ -113.529). Oriente: Av. De los Ríos/Roca Portense/2 de Noviembre (≈ -113.508); después sigue Nuevo Peñasco. Norte: Lázaro Cárdenas/Calle 26 (≈31.326) y, en la esquina noreste, Calle 27 Alejandro Sobarzo (≈31.329); después sigue Luis Donaldo Colosio. Sur: Calle 10/12 de Octubre (≈31.309), con negocios hasta Blvd. Fremont (≈31.306). Sus calles principales son Sonora (Sexta), Melchor Ocampo (Séptima), Miguel Hidalgo, Simón Morúa y Josefa Ortiz de Domínguez.",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "659 negocios 'ORIENTE' (tipo COLONIA, CIUDAD, CONDOMINIO o PUERTO). Mediana 31.3163,-113.5200. El 90 % de los negocios queda a menos de 1.2 km.",
+     "url": "https://www.inegi.org.mx/app/mapa/denue/"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Hay un place=suburb 'Oriente' en 31.3165,-113.5248. Está dentro de la colonia (43 de los 48 negocios a 200 m dicen ORIENTE), pero en su orilla poniente, unos 470 m al oeste del centro de los negocios.",
+     "url": "https://www.openstreetmap.org/node/11463541099"
+    },
+    {
+     "tipo": "anuncio inmobiliario",
+     "detalle": "Lotes en Melchor Ocampo y en Av. Esteban Pivac, 'Col. Oriente', CP 83553, y una casa en Ruiz Cortines y Javier Mina (fragmentos de resultados de búsqueda).",
+     "url": "https://propiedades.com/oriente-puerto-penasco/terrenos-habitacionales"
+    }
+   ],
+   "notaVerificador": "La propuesta (31.3163,-113.5190) queda unos 200 m al oriente del Blvd. Josefa Ortiz de Domínguez. Eso ya es la colonia oficial Josefa Ortiz de Domínguez, que también tiene CP 83553, a unos 720 m del centro del polígono oficial de Oriente. Justo ahí están 2 de los 3 negocios del DENUE que declaran 'Josefa Ortiz de Domínguez' y que no están sobre la calle de ese nombre: Julián Bustamante entre Sonora y Melchor Ocampo (31.3165,-113.5190) y León de la Barra entre Julián Bustamante y Enriqueta de Tena (31.3152,-113.5181). Las fuentes de la ubicación oficial: (1) Polígonos KML de heraldo.com.mx (ver"
+  },
+  {
+   "nombre": "Paz del Mar",
+   "lat": 31.2824,
+   "lng": -113.4512,
+   "radio": 250,
+   "confianza": "media",
+   "limiteOficial": false,
+   "verificacion": "confirmada",
+   "limites": "Dentro de Las Conchas, en la Sección 9 (extremo oriente). Es un enclave con acceso privado propio y la Avenida Paz del Mar corre a lo largo de la zona federal marítima. Queda donde termina la Av. Viento del Mar, al poniente de Tesoro at Las Conchas (Camino a Las Conchas 92). Calles privadas pavimentadas en OSM: lat 31.2821 a 31.2836, lng -113.4522 a -113.4496.",
+   "fuentes": [
+    {
+     "tipo": "MLS de Playa Sonora Realty (listado de Vanguard Point Realty)",
+     "detalle": "Lote S9 L11, Av. Vientos del Mar. El anuncio dice '30 m de frente a la Avenida Paz del Mar', dentro de la comunidad cerrada de Las Conchas y 'detrás de un acceso privado adicional del desarrollo'. Coordenadas 31.282161,-113.452044.",
+     "url": "https://www.playasonorarealty.com/property/25-1791/"
+    },
+    {
+     "tipo": "MLS de Playa Sonora Realty",
+     "detalle": "Lote S9 Lot 12, 'Fraccionamiento Las Conchas', con frente a la Avenida Paz del Mar. Coordenadas 31.282207,-113.452218.",
+     "url": "https://www.playasonorarealty.com/property/25-1792/"
+    },
+    {
+     "tipo": "MLS de Playa Sonora Realty (listado de Rocky Point Realty)",
+     "detalle": "Lote S9D L16, Av. Viento del Mar, 'al final de Las Conchas'. Coordenadas 31.283675,-113.454234. Confirma que la Sección 9 es el extremo oriente.",
+     "url": "https://www.playasonorarealty.com/property/24-1305/"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Calles privadas pavimentadas sin nombre (ways 974016683 y 310752303) al final de la Av. Viento del Mar, junto a 'Tesoro at Las Conchas' (way 1236650085).",
+     "url": "https://www.openstreetmap.org/way/974016683"
+    },
+    {
+     "tipo": "Homónimo: sitio del resort",
+     "detalle": "'Paz del Mar' es también una casa-resort de renta en Marisma 63, Las Conchas, 83554. Es una sola propiedad, no un fraccionamiento.",
+     "url": "https://www.pazdelmarresort.com/"
+    },
+    {
+     "tipo": "Homónimo: Oceano Rentals",
+     "detalle": "'Paz Del Mar 20 guest' (y unidades de 8, 9, 16 y 30 huéspedes) en Las Conchas, en 31.29086,-113.49049. Overture/Meta lo tiene en 31.29070,-113.49034.",
+     "url": "https://bookings-oceano-rentals.escapia.com/Unit/Details/272396"
+    },
+    {
+     "tipo": "SEPOMEX (vía micodigopostal)",
+     "detalle": "Fraccionamiento, CP 83554 (el de Las Conchas), zona urbana.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/ordenarpor=codigo_postal&orden=asc/"
+    }
+   ],
+   "notaVerificador": "Confirmo, con confianza media. Abrí las fichas 25-1791 y 25-1792. Los lotes S9 L11 y L12 tienen '30 m de frente a la Avenida Paz del Mar', dentro de Las Conchas y 'detrás de un acceso privado adicional', en 31.2822,-113.4521. La ficha 24-1305 confirma que la Sección 9 es el final de Las Conchas. Evidencia propia: la página de micodigopostal para 'Paz del Mar' trae un punto de mapa específico, 31.2825687,-113.4523381, a unos 110 m del propuesto. No es su punto genérico de ciudad, el que sí usa para Los Delfines. En la API de OSM revisé las calles privadas pavimentadas (ways 974016683 y 31075230"
+  },
+  {
+   "nombre": "Peñasco",
+   "lat": 31.3099,
+   "lng": -113.5347,
+   "radio": 500,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Fraccionamiento con calles de árboles y flores. Al norte, Calle Miguel Hidalgo y Costilla; al sur, la vía del tren/Calle 10 (De las Margaritas); al noroeste, el Blvd. Padre Eusebio Francisco Kino (en diagonal); al este, Av. Sinaloa–Niños Héroes (algunos negocios llegan a Vicente Guerrero). Calles internas: Los Pinos, Cedros, Ciprés, Jacarandas, Eucalipto, Las Palmas, Magnolias (Álvaro Obregón) y 12 de Octubre (De las Rosas). Al oeste de Kino y al norte de Hidalgo es Centro; al sur de la vía, Benito Juárez y El Cárcamo.",
+   "fuentes": [
+    {
+     "tipo": "DENUE INEGI (abril 2026, datos locales)",
+     "detalle": "30 negocios juntos en el AGEB 2289: 'PEÑASCO' 7, 'FRACCIONAMIENTO PEÑASCO' 7, 'PUERTO PEÑASCO' con tipo Fraccionamiento 15 y 'FRACCIONAMIENTO PUERTO PEÑASCO' 1. Están sobre Sinaloa, Los Pinos, Cedros, Ciprés, Magnolias, Kino y 12 de Octubre; 25 declaran el CP 83554. Mediana: 31.30985,-113.53364; 90 % a menos de 390 m.",
+     "url": "https://www.inegi.org.mx/app/mapa/denue/"
+    },
+    {
+     "tipo": "Web: micodigopostal.org (mapa de la colonia)",
+     "detalle": "Pin de 'Peñasco', CP 83554, en 31.311696,-113.5326725 (Hidalgo y Niños Héroes, esquina noreste del fraccionamiento). Queda a ~240 m del centro del DENUE.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/penasco/"
+    },
+    {
+     "tipo": "OpenStreetMap (calles)",
+     "detalle": "La trama de calles de árboles y flores (Los Pinos, Cedros, Ciprés, Jacarandas, Eucalipto, Las Palmas, Calle de las Margaritas, Magnolias–Álvaro Obregón) ocupa de 31.307 a 31.312 de latitud y de -113.5385 a -113.531 de longitud.",
+     "url": "https://www.openstreetmap.org/"
+    }
+   ],
+   "notaVerificador": "Dentro de 300 m hay 53 negocios: 26 con alguna variante de Peñasco (13 'Puerto Peñasco' tipo Fraccionamiento, 7 'Peñasco', 5 'Fracc. Peñasco', 1 'Fracc. Puerto Peñasco'), 20 Centro, 3 Oriente y 3 El Cárcamo. Los 'Centro' están en Sinaloa, Hidalgo y Cedros, al norte de Magnolias. Evidencia independiente: la capa COLONIA del INE tiene un polígono 'PEÑASCO' de 43 ha con centroide en 31.31032,-113.53411, a 73 m del punto. Las 546 direcciones del registro nacional dentro de él tienen todas CP 83554 (no el 83550 de Centro), y su medoide en Sinaloa está a ~95 m. El pin de micodigopostal (comprobado) "
+  },
+  {
+   "nombre": "Privada Residencial Vista de Oro",
+   "lat": 31.2983,
+   "lng": -113.531,
+   "radio": 150,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Manzana privada en El Mirador (col. Benito Juárez): Av. Nayarit al poniente, C. Vicente Guerrero al oriente, C. Mariano Matamoros al sur y C. Ramos Arizpe al norte. Las calles internas no tienen nombre. Está unos 400 m al oriente del Playa de Oro RV Park.",
+   "fuentes": [
+    {
+     "tipo": "anuncio de renta vacacional",
+     "detalle": "Oceano Rentals (Escapia), casa 'Vista de Oro': dirección 'Mirador Puerto Peñasco, Sonora 83554', código de unidad VDO114, coordenadas publicadas 31.2984886,-113.5310822, 'a poca distancia de Mi Playa'.",
+     "url": "https://bookings-oceano-rentals.escapia.com/Unit/Details/264781"
+    },
+    {
+     "tipo": "anuncio de renta vacacional",
+     "detalle": "Travelocity: 'Vista De Oro: Mirador studio in quiet community near local eateries & beach', en la zona Benito Juárez / Mirador.",
+     "url": "https://www.travelocity.com/es/Puerto-Penasco-Hoteles-Vista-De-Oro-Mirador-Studio-In-Quiet-Community-Near-Local-Eateries-Beach.h106692521.Informacion-Hotel"
+    },
+    {
+     "tipo": "direcciones del INEGI (fuente mx/countrywide de OpenAddresses, la misma que usa Overture en su versión 2026-10-21)",
+     "detalle": "En esa manzana hay una privada con domicilios en 'PRIVADA NINGUNO' y 'CALLE NINGUNO', números 1–41 y 98–134, CP 83554, colonia Benito Juárez. El 'PRIVADA NINGUNO 114' está en 31.29838,-113.53109, a 12 m del punto del anuncio VDO114.",
+     "url": "https://dl.digital-guard.org/090735bf608a3202a141da670d960a05dbe464893ba49208fc37c30485f5bedc.zip"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Hay una retícula interna de 4 calles residenciales sin nombre (ways 43102148 a 43102151) entre Av. Nayarit y C. Vicente Guerrero, de Matamoros a Ramos Arizpe.",
+     "url": "https://www.openstreetmap.org/way/43102149"
+    },
+    {
+     "tipo": "SEPOMEX (vía micodigopostal)",
+     "detalle": "Privada Residencial Vista de Oro, Fraccionamiento, CP 83554. Es el mismo CP de Benito Juárez y El Mirador.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/privada-residencial-vista-de-oro/"
+    }
+   ],
+   "notaVerificador": "Confirmada con una fuente oficial independiente. La capa COLONIA de la cartografía electoral del INE (la descargué yo mismo del WMS cartografia.ine.mx y es idéntica byte a byte a (archivo de trabajo)) tiene un polígono llamado exactamente 'PRIVADA RESIDENCIAL VISTA DE ORO'. Su centroide está en 31.29812,-113.53104, a 20 m del punto propuesto. Ocupa lat 31.29713–31.29916 y lng −113.53186 a −113.53023, unos 225×155 m: la manzana entre Av. Nayarit (poniente), C. Vicente Guerrero (oriente), C. Matamoros (sur) y C. Ramos Arizpe (norte), según las etiquetas de la capa VIALIDAD del INE y los"
+  },
+  {
+   "nombre": "Puerto Peñasco Centro",
+   "lat": 31.3192,
+   "lng": -113.5364,
+   "radio": 900,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "corregida",
+   "limites": "Poniente: la vía y la estación del tren Ferromex (Av. Venustiano Carranza/Constitución, lng ≈ -113.541); del otro lado está Ferrocarrilera. Norte: Calle 26 (≈31.326-31.327); al norte empieza José López Portillo. Oriente: la frontera con Oriente no es recta. Al norte de Melchor Ocampo (Séptima) llega hasta Josefa Ortiz de Domínguez (≈ -113.521); al sur de Sonora/Melchor Ocampo solo hasta Abelardo L. Rodríguez/Rodolfo Campodónico (≈ -113.529). Sur: Calle 12-13 y Blvd. Kino (≈31.310-31.311); sobre Blvd. Benito Juárez sigue hasta Calle 11 (≈31.307), donde empiezan Benito Juárez y Peñasco. Su eje es Blvd. Benito Juárez García.",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "996 negocios: CENTRO 866, COLONIA CENTRO 112, PUERTO PEÑASCO CENTRO 11 y otras variantes. Mediana 31.3192,-113.5362. Un mapa de la colonia que declara cada negocio, en celdas de 90 m, muestra un bloque continuo entre la vía, Calle 12-13, Calle 26 y Oriente.",
+     "url": "https://www.inegi.org.mx/app/mapa/denue/"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "El nodo de la ciudad 'Puerto Peñasco' (31.3171,-113.5318) cae dentro del Centro. OSM no tiene un nodo de colonia.",
+     "url": "https://www.openstreetmap.org/node/333154553"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "La estación Puerto Peñasco de Ferromex (31.3193,-113.5411) y las vías marcan el borde poniente.",
+     "url": "https://www.openstreetmap.org/node/2232106607"
+    },
+    {
+     "tipo": "catálogo de CP",
+     "detalle": "Puerto Peñasco Centro, colonia urbana, CP 83550.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/ordenarpor=zona&orden=asc/"
+    },
+    {
+     "tipo": "anuncio inmobiliario",
+     "detalle": "Casas anunciadas en 'Puerto Peñasco Centro' sobre Benito Juárez. Solo vi el fragmento del buscador; la página bloqueó la descarga.",
+     "url": "https://www.inmuebles24.com/casas-en-puerto-penasco-centro.html"
+    },
+    {
+     "tipo": "anuncio inmobiliario",
+     "detalle": "Un anuncio (visto en resultados de búsqueda de propiedades.com) llama 'Col. Oriente' a Ruiz Cortines y Javier Mina (31.3214,-113.5241). Ahí el DENUE dice Centro en 19 de 19 negocios, así que esa franja noreste es dudosa.",
+     "url": "https://propiedades.com/oriente-puerto-penasco/terrenos-habitacionales"
+    }
+   ],
+   "notaVerificador": "El punto propuesto (31.3190,-113.5335) sí cae en el Centro: con 'cerca 300', 88 de 92 negocios dicen Centro. Pero quedó unos 280 m al oriente porque la propuesta estiró el Centro hasta Josefa Ortiz de Domínguez al norte de Melchor Ocampo, y esa franja es oficialmente colonia Oriente. Lo muestran tres fuentes. (1) El polígono KML de la colonia en heraldo.com.mx va de la vía/Av. Constitución (-113.541) a Calle Vicente Guerrero (-113.531), y de Calle 26 (31.327) a 31.309 aprox.; el polígono de Oriente empieza en Vicente Guerrero. (2) Entre 40,530 direcciones oficiales con código postal (Overture/"
+  },
+  {
+   "nombre": "Recinto Portuario",
+   "lat": 31.30928,
+   "lng": -113.54385,
+   "radio": 500,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "ajustada en la revisión de conjunto: punto del polígono del INE en la dársena; revisión de conjunto",
+   "limites": "Zona portuaria alrededor de la dársena. Por el sur, el frente de agua del Puerto Viejo: Malecón Kino entre Ulloa y Zaragoza, Primero de Junio, Ulloa, Alcantar, 20 de Noviembre y el Blvd. Benito Juárez hasta Lauro Contreras y la Calle Recinto Portuario (marina 'El Muelle'). Por el norte y el este, la orilla de la dársena: muelles y astilleros en Calle Recinto Portuario, De las Rosas, Lenguado, Mantarraya y Plutarco Elías Calles, y la Sexta Zona Naval. Se traslapa con El Puerto en el Puerto Viejo. Colinda al este con Benito Juárez (Blvd. Benito Juárez/Luis Encinas Johnson).",
+   "fuentes": [
+    {
+     "tipo": "DENUE INEGI (abril 2026, datos locales)",
+     "detalle": "145 negocios 'RECINTO PORTUARIO' (2 de ellos con tipo 'Ciudad Industrial'). 130 están en el AGEB 1204, Puerto Viejo: manzanas 004, 005 y 011 del Malecón Kino entre Ulloa y Zaragoza, más Primero de Junio, Alcantar y Blvd. Benito Juárez a Lauro Contreras. Otros 15 están en el AGEB 1153: astilleros, Marina Safe y Sexta Zona Naval al norte de la dársena. Mediana: 31.30385,-113.55157. 'EL MUELLE' es la Marina Puerto Peñasco en Calle Recinto Portuario.",
+     "url": "https://www.inegi.org.mx/app/mapa/denue/"
+    },
+    {
+     "tipo": "Web: micodigopostal.org (mapa de la colonia)",
+     "detalle": "Pin de Recinto Portuario, CP 83554, en 31.306165,-113.5438332: orilla este de la dársena, junto a Calle Mantarraya/Lenguado. Queda a ~780 m del centro del DENUE.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/recinto-portuario/"
+    },
+    {
+     "tipo": "Web: sitios de viajes",
+     "detalle": "Expedia y Kayak tienen un barrio 'Recinto Portuario' sin hoteles dentro, con el Hotel Peñasco del Sol a ~0.4 millas. Esa distancia encaja mejor con un centro en la orilla norte o este de la dársena que con el malecón.",
+     "url": "https://www.expedia.com/Puerto-Penasco-Recinto-Portuario.dx553248635976399355"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Sexta Zona Naval (31.30600,-113.54739). Calle Recinto Portuario (tertiary) y calles Pelícano y Tiburón con alt_name 'Calle Recinto Portuario', en la orilla sur y este de la dársena. Calle Circunvalación con alt_name 'Malecón Kino'.",
+     "url": "https://www.openstreetmap.org/node/11366309275"
+    }
+   ],
+   "notaVerificador": "Dentro de 300 m, 37 de 57 negocios declaran Recinto Portuario (además: 14 Puerto, 2 El Puerto, 2 BJ y 1 El Muelle). Las fuentes no coinciden en dónde está el núcleo. (a) DENUE: 102 de los 145 negocios 'RECINTO PORTUARIO' están en tres manzanas del lado de tierra del Malecón Kino (1204-004/005/011), con medoide en Primero de Junio (31.30363,-113.55132). (b) La capa COLONIA del INE dibuja 'RECINTO PORTUARIO' (22 ha) como un anillo alrededor de la dársena: muelle sur (Calle Recinto Portuario y Calles 3, 4 y 9), muelle este (Lenguado, Mantarraya, Luis Encinas Johnson) y la manzana Calles 11–12/De "
+  },
+  {
+   "nombre": "Residencial la Providencia",
+   "lat": 31.3408,
+   "lng": -113.5117,
+   "radio": 100,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "corregida",
+   "limites": "Solo hay un indicio: una franja sobre el Blvd. Rafael Godoy Cisneros (Calle 47), entre Calle 25 Norte y Calle 26 Sur (Callejón José S. Healy). El INEGI y el DENUE asignan esa zona a Luis Donaldo Colosio y Nuevo Peñasco.",
+   "fuentes": [
+    {
+     "tipo": "geocodificador Esri (World Geocoding Service)",
+     "detalle": "Devuelve '83553, Residencial Providencia, Puerto Peñasco' (tipo PostalLoc) en 31.32740,-113.50700. Con geocodificación inversa, el barrio 'Residencial Providencia' solo aparece entre lat 31.3272–31.3278 y lng −113.5079 a −113.5066, una franja de unos 60×120 m sobre el Blvd. Rafael Godoy Cisneros.",
+     "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/reverseGeocode?location=-113.5070,31.3274&f=json"
+    },
+    {
+     "tipo": "direcciones del INEGI y DENUE (contradicen el indicio)",
+     "detalle": "En esa franja el INEGI asigna los domicilios a Luis Donaldo Colosio y Nuevo Peñasco (CP 83553), y los negocios del DENUE declaran Luis Donaldo Colosio. No hay privadas ni calles cerradas.",
+     "url": "https://dl.digital-guard.org/090735bf608a3202a141da670d960a05dbe464893ba49208fc37c30485f5bedc.zip"
+    },
+    {
+     "tipo": "portal inmobiliario",
+     "detalle": "propiedades.com no tiene ningún inmueble en Residencial la Providencia. Sus coordenadas para la colonia son el punto genérico de la ciudad.",
+     "url": "https://propiedades.com/residencial-la-providencia-puerto-penasco/"
+    },
+    {
+     "tipo": "SEPOMEX (vía micodigopostal)",
+     "detalle": "Residencial la Providencia, Fraccionamiento, CP 83553.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/"
+    }
+   ],
+   "notaVerificador": "La propuesta no se sostiene: el punto 31.3275,-113.5072 cae dentro del polígono 'NUEVO PEÑASCO' del INE, y ahí los negocios del DENUE ('cerca 300': 28 Nuevo Peñasco y 25 variantes de Colosio) y el INEGI declaran Colosio o Nuevo Peñasco, sin ninguna privada. La única base de la propuesta era el geocodificador de Esri, y comprobé que no es confiable aquí. Sus puntos 'PostalLoc' de otras colonias del CP 83553/83557 están desviados entre 570 y 1,250 m de sus centros DENUE (Colosio 1.25 km, El Cárcamo unos 710 m, San Rafael unos 730 m). Además, su etiqueta de barrio en esa zona llama 'Brisas del Go"
+  },
+  {
+   "nombre": "San Jorge",
+   "lat": 31.3481,
+   "lng": -113.5154,
+   "radio": 130,
+   "confianza": "media",
+   "limiteOficial": false,
+   "verificacion": "confirmada",
+   "limites": "Cerrada con calles internas sin nombre al suroeste del Blvd. Las Conchas. Va de la C. Marcelo Pino (poniente) al Blvd. Las Conchas (nororiente), al norte de la C. Marcella. Está unos 500 m al sureste del cruce del Blvd. Las Conchas con el Blvd. Benito Juárez (carretera a Sonoyta), en la parte norte de Brisas del Golfo.",
+   "fuentes": [
+    {
+     "tipo": "geocodificador Esri (datos viales comerciales, independientes de OSM)",
+     "detalle": "Calle 'Cerrada San Jorge, Puerto Peñasco, Sonora, 83553' en 31.34802,-113.51533, con un segundo tramo de CP 83557 en 31.34870,-113.51452.",
+     "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=San%20Jorge%2C%2083553%2C%20Puerto%20Pe%C3%B1asco%2C%20Sonora&f=json"
+    },
+    {
+     "tipo": "OpenStreetMap",
+     "detalle": "Polígono residencial cerrado (way 496812654, landuse=residential) de unos 170×150 m, con calles internas sin nombre (ways 496812599 a 496812602). Esquinas: 31.34864,-113.51633 / 31.34909,-113.51560 / 31.34779,-113.51447 / 31.34709,-113.51557. El punto 'Cerrada San Jorge' cae dentro.",
+     "url": "https://www.openstreetmap.org/way/496812654"
+    },
+    {
+     "tipo": "direcciones del INEGI (OpenAddresses / Overture)",
+     "detalle": "Dentro del polígono hay 39 domicilios en 'CALLE NINGUNO' con CP 83553 (en 2010 eran 14). El INEGI los incluye en Brisas del Golfo.",
+     "url": "https://dl.digital-guard.org/090735bf608a3202a141da670d960a05dbe464893ba49208fc37c30485f5bedc.zip"
+    },
+    {
+     "tipo": "SEPOMEX (vía micodigopostal)",
+     "detalle": "San Jorge, Fraccionamiento, CP 83553.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/"
+    },
+    {
+     "tipo": "portal inmobiliario",
+     "detalle": "propiedades.com no tiene inmuebles en 'San Jorge, Puerto Peñasco'.",
+     "url": "https://propiedades.com/san-jorge-puerto-penasco/"
+    }
+   ],
+   "notaVerificador": "No encontré pruebas de que esté mal, pero el nombre sigue dependiendo de una sola fuente. Lo que comprobé yo mismo: (1) volví a consultar el geocodificador de Esri y devuelve 'Cerrada San Jorge, 83553' en 31.34802,-113.51533 (a 12 m del punto). Con geocodificación inversa, todas las calles internas del polígono se llaman 'Cerrada San Jorge', y la entrada es 'Avenida Las Conchas & Cerrada San Jorge' (31.34873,-113.51448, CP 83557). La cerrada vecina al oriente (vía OSM 496814075) sale como 'Cerrada del Sol': el proveedor de Esri sí registra nombres de cerradas en esta zona. (2) Según la API de "
+  },
+  {
+   "nombre": "San Rafael",
+   "lat": 31.3367,
+   "lng": -113.4923,
+   "radio": 1100,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "corregida",
+   "limites": "Es todo el sector oriente de la ciudad. Norte: Calle 46 Río Papaloapan / Río Grijalva (~31.346). Sur: Calle 20 Simón Morúa (~31.322). Oeste, entre Calle 28 Río Colorado y Blvd. José López Portillo: Blvd. Rafael Godoy Cisneros (Calle 47). La primera cuadra al norte de Sobarzo, entre Godoy y Calle 53, la declaran Colosio. Al norte de López Portillo el límite oeste es Blvd. Las Conchas (colinda con Brisas del Golfo). Al sur de Sobarzo el límite oeste es Blvd. Las Conchas / Av. 61 (colinda con Nuevo Peñasco y Villas de Altar). Este: calles 70 a 73, fin de la mancha urbana. Las avenidas numeradas 48 a 73 corren de norte a sur. De este a oeste corren calles con nombre de río: Río Colorado 28, Río Yaqui 29, Río Mayo 30, Río Fuerte, Río Santiago 33, Río Lerma 34, Río Balsas 35, Río Asunción 36, Río Suchiate 38, Río Bravo 39, Río Mocorito 40 y siguientes hasta Río Culiacán 44, Río Usumacinta 45 y Río Papaloapan 46. Al sur de Sobarzo siguen Healy 26, López Mateos 25, Lázaro Cárdenas, Benito Juárez García, Juan Aldama 22, Ruiz Cortines 21 y Simón Morúa 20.",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "252 negocios declaran SAN RAFAEL o SAN RAFEL, casi todos con CP 83557 y sin mezclarse con otros nombres. Ocupan desde Calle 20 Simón Morúa hasta Calle 46 Río Papaloapan, y desde Blvd. Godoy Cisneros / Av. 48 hasta la Calle 73. Mediana: 31.33392,-113.49388. Hay 24 puntos lejanos: el ejido San Rafael sobre la carretera a Sonoyta y otros negocios sueltos.",
+     "url": null
+    },
+    {
+     "tipo": "OpenStreetMap (nodo de colonia)",
+     "detalle": "Nodo place=suburb 'Colonia San Rafael' en 31.32575,-113.48461. Cae en la parte sureste de la misma colonia: 50 de los 51 negocios del DENUE a 600 m dicen San Rafael.",
+     "url": "https://www.openstreetmap.org/node/11463541097"
+    },
+    {
+     "tipo": "Noticia (Rocky Point Times, OOMAPAS 2016)",
+     "detalle": "Obra para ampliar la red de agua al oriente, a beneficio de las colonias San Rafael y Nuevo Peñasco. Tubería de 8 pulgadas por la Calle 67, desde Río Culiacán hasta Blvd. José López Portillo (cruce en OSM: 31.33642,-113.48534), con ramales en las calles 66 y 68. Segunda etapa en Av. Río Bravo, entre las calles 68 y 61.",
+     "url": "https://rptimes.com/jim-ringquist/2016/08/work-to-extend-hydraulic-network-in-supplying-water-to-eastern-part-of-city/"
+    },
+    {
+     "tipo": "Ayuntamiento de Puerto Peñasco",
+     "detalle": "La nota 'Arranca segunda etapa de programa Piso Firme en la San Rafael' (agosto de 2026) confirma el nombre de uso común. No menciona calles.",
+     "url": "https://puertopenasco.gob.mx/arranca-segunda-etapa-de-programa-piso-firme-en-la-san-rafael/"
+    },
+    {
+     "tipo": "Anuncios inmobiliarios (propiedades.com, vistos en resultados de búsqueda)",
+     "detalle": "Hay una sección 'San Rafael (El Choyal)' con CP 83557 y remates sobre Avenida 58, dentro de esta misma zona. La página no se pudo abrir (se agotó el tiempo de espera).",
+     "url": "https://propiedades.com/san-rafael-el-choyal-puerto-penasco/casas-remates"
+    },
+    {
+     "tipo": "OpenStreetMap (calles)",
+     "detalle": "Centro de la red de calles dentro del polígono que marca el DENUE: 31.33456,-113.49168. Son 133 km de calles; el 80% queda a menos de 1.27 km de ese centro, y el 90% a menos de 1.4 km.",
+     "url": null
+    }
+   ],
+   "notaVerificador": "El punto propuesto sí cae en San Rafael (18 de 18 negocios a 300 m), pero la extensión está mal. La capa COLONIA de la cartografía electoral del INE, que descargué yo mismo (sus bordes siguen las calles de OSM a menos de 30 m), separa SAN RAFAEL (EL CHOYAL). Es otra colonia del catálogo SEPOMEX, con el mismo CP 83557. Ocupa todo lo que está al sur de la Calle 25 Adolfo López Mateos y al este de la Av. 61, hasta el borde oriente (~Calle 73) y al sur hasta ~31.318. La propuesta la incluyó en San Rafael (límite sur en Simón Morúa) y su radio de 1400 m cubre el centro de El Choyal. El nodo OSM 'Co"
+  },
+  {
+   "nombre": "San Rafael (El Choyal)",
+   "lat": 31.3257,
+   "lng": -113.4861,
+   "radio": 750,
+   "confianza": "media",
+   "limiteOficial": true,
+   "verificacion": "corregida",
+   "limites": "Es la zona del CP 83557, que coincide con la colonia San Rafael. Va del Blvd. Rafael Godoy Cisneros / Av. 47–49 (poniente) a la Av. 70 (oriente), y de C. Simón Morúa / Lázaro Cárdenas (sur, lat ≈31.322) hasta lat ≈31.347 al norte, pasando la C. 46 Río Papaloapan. No se pudo delimitar un sector 'El Choyal'. El único punto concreto es un anuncio en C. Río Mayo y Av. 55 (31.3343,-113.4990).",
+   "fuentes": [
+    {
+     "tipo": "anuncio inmobiliario",
+     "detalle": "propiedades.com ID 31482617: casa en 'Rio Mayo, Col. San Rafael (El Choyal), C.P. 83557', con coordenadas del anuncio 31.3343,-113.4990 (Río Mayo y Av. 55, dentro de la San Rafael).",
+     "url": "https://propiedades.com/san-rafael-el-choyal-puerto-penasco/"
+    },
+    {
+     "tipo": "resultados de búsqueda (anuncios)",
+     "detalle": "Hay otros anuncios en 'Col. San Rafael (El Choyal)', por ejemplo en 'Calle 24 Lázaro Cárdenas del Río #4525' (ID 31432095), en el sur de la San Rafael. No pude abrirlos para verificar sus coordenadas.",
+     "url": "https://propiedades.com/san-rafael-el-choyal-puerto-penasco/casas-venta"
+    },
+    {
+     "tipo": "direcciones del INEGI (OpenAddresses / Overture)",
+     "detalle": "Los 7,167 domicilios con CP 83557 están todos en la zona de la colonia San Rafael (lat 31.321–31.350, lng −113.507 a −113.477) y el INEGI los llama 'SAN RAFAEL'. Ninguno dice 'El Choyal'.",
+     "url": "https://dl.digital-guard.org/090735bf608a3202a141da670d960a05dbe464893ba49208fc37c30485f5bedc.zip"
+    },
+    {
+     "tipo": "SEPOMEX (vía micodigopostal)",
+     "detalle": "San Rafael (El Choyal), Colonia, CP 83557, sin mapa. Comparte CP con San Rafael y Villas de Altar.",
+     "url": "https://micodigopostal.org/sonora/puerto-penasco/san-rafael-el-choyal/"
+    },
+    {
+     "tipo": "DENUE (datos locales)",
+     "detalle": "Ningún negocio menciona 'Choyal'. Unos 250 negocios de esa zona declaran 'SAN RAFAEL' (centro 31.3339,-113.4939).",
+     "url": null
+    }
+   ],
+   "notaVerificador": "La propuesta asumía que El Choyal es toda la San Rafael y que no se puede delimitar. La capa COLONIA del INE sí la delimita: separa 'SAN RAFAEL' y 'SAN RAFAEL (EL CHOYAL)' como lo hace SEPOMEX. El Choyal son 3 polígonos. El principal, de 1.55 km², ocupa lat 31.3164–31.3287 y lng −113.4936 a −113.4748: el sector sureste, al sur de la C. 25 Adolfo López Mateos y al oriente de la Av. 61. En la parte poblada llega al sur hasta la C. 20 Simón Morúa y al oriente hasta el final de la traza (unos −113.475); hacia el sureste incluye terreno sin calles. Los otros dos son pequeños, junto a Villas de Alta"
+  },
+  {
+   "nombre": "Villas de Altar",
+   "lat": 31.3278,
+   "lng": -113.4933,
+   "radio": 350,
+   "confianza": "alta",
+   "limiteOficial": true,
+   "verificacion": "confirmada",
+   "limites": "Avenida 58 al oeste, Avenida 61 al este, Calle Benito Juárez García al sur y Calle 27 Alejandro Sobarzo Loaiza al norte. Por dentro la cruzan las avenidas 58 B, 59, 60 y 60 B, Calle Lázaro Cárdenas del Río y su callejón, Calle 25 Adolfo López Mateos y Calle 26 José Santiago Healy. Está rodeada por San Rafael al norte y al este, y por Nuevo Peñasco al oeste (Av. 58 / Blvd. Las Conchas).",
+   "fuentes": [
+    {
+     "tipo": "DENUE (INEGI, abril 2026)",
+     "detalle": "27 negocios declaran VILLAS DE ALTAR, con CP 83557 o 83553. Todos están entre Av. 58 y Av. 61 y entre Calle Benito Juárez García y Calle 27 Sobarzo. Mediana: 31.3268,-113.49369. Radio que cubre el 80%: 273 m. Ninguno está lejos.",
+     "url": null
+    },
+    {
+     "tipo": "OpenStreetMap (calles)",
+     "detalle": "Esquinas: Av. 58 × Callejón Benito Juárez García en 31.32477,-113.49477; Av. 61 × Calle Benito Juárez García en 31.32548,-113.49138; Av. 58 × Sobarzo en 31.33032,-113.49520; Av. 61 × Sobarzo en 31.33052,-113.49174. El promedio de las cuatro da el centro.",
+     "url": null
+    },
+    {
+     "tipo": "Anuncios inmobiliarios (propiedades.com, vistos en resultados de búsqueda)",
+     "detalle": "Confirman que Villas de Altar es un fraccionamiento de Puerto Peñasco con CP 83557. Un anuncio dice 'Avenida 69 Oeste, Col. Villas de Altar', pero la Av. 69 está a ~1 km al este, en la zona que el DENUE llama San Rafael. La página no se pudo abrir (se agotó el tiempo de espera).",
+     "url": "https://propiedades.com/villas-de-altar-puerto-penasco/"
+    }
+   ],
+   "notaVerificador": "Confirmada con una fuente independiente: la capa COLONIA del INE. El fraccionamiento aparece en tres polígonos: VILLAS DE ALTAR (Av. 58 a Av. 59, de Lázaro Cárdenas a Calle 28 Río Colorado), VILLAS DE ALTAR II (Av. 60 a Av. 61, de Juan Aldama a Calle 25 Norte) y VILLAS DE ALTAR III (Av. 59 a Av. 60, de Calle 26 Sur a Callejón 27 Sur). Suman unas 13 ha. Entre ellos el INE intercala dos piezas chicas que llama 'San Rafael (El Choyal)': una de Lázaro Cárdenas a Juan Aldama, entre Blvd. Las Conchas y Av. 60, y otra en Av. 59-60 junto a López Mateos. El centro de la red de calles de los tres polígo"
+  }
+ ]
+}
