@@ -40,50 +40,23 @@ administrador del grupo, y solo se guarda colonia, problema y fecha.
 Lo que más ayuda: pedir a los administradores de los grupos que fijen el enlace de la app y
 publicar el resumen diario de vuelta en los grupos.
 
-## Lo que falta para usarla en la comunidad
+## Dónde está publicada
 
-1. **Base de datos compartida.** Hoy cada reporte se guarda solo en el navegador de quien lo hace.
-   Para que todos vean lo mismo hay que conectar una base de datos (por ejemplo Supabase, que
-   tiene plan gratuito): una tabla `reportes` donde cualquiera pueda agregar y leer, pero no editar
-   ni borrar. Solo hay que cambiar `js/almacen.js`; el resto de la app no se toca.
-2. **Publicarla** en una dirección web gratuita (GitHub Pages, Netlify o Cloudflare Pages) para
-   compartir el enlace en los grupos.
-3. **Protección contra reportes falsos o repetidos**: un captcha ligero (Cloudflare Turnstile) y un
-   límite de reportes por dispositivo.
-4. **Que alguien de Peñasco revise las colonias.** Están todas ubicadas (ver abajo), pero las de
+**https://jmemijeabadi.github.io/agua-penasco/** (GitHub Pages, gratis). Cada cambio que se sube a
+la rama `main` de [este repositorio](https://github.com/Jmemijeabadi/agua-penasco) se publica
+solo en uno o dos minutos.
+
+## Lo que falta
+
+1. **Conectar la base de datos compartida** (ver abajo). El código ya está listo: solo hay que
+   crear el proyecto de Supabase y poner su dirección y clave pública en `js/config.js`.
+2. **Que alguien de Peñasco revise las colonias.** Están todas ubicadas (ver abajo), pero las de
    confianza "media" y los límites entre colonias vecinas conviene que los confirme alguien que
    conozca la ciudad. Se corrigen desde *Acerca → Colonias del mapa* y luego se reemplaza
    `js/colonias.js` con el archivo descargado.
-5. Opcional: un número de WhatsApp que reciba reportes (“sin agua obrera”) usando el mismo
-   detector de texto.
-
-## Base de datos compartida (Supabase)
-
-Mientras `js/config.js` esté vacío, cada reporte se guarda solo en el navegador de quien lo hace
-y la app muestra datos de ejemplo. Para que todos vean lo mismo:
-
-1. Entrar a [supabase.com](https://supabase.com), crear una cuenta (se puede con GitHub) y un
-   proyecto nuevo (plan gratis). Nombre: `agua-penasco`; región: la más cercana (oeste de
-   Estados Unidos). Guardar la contraseña de la base en un lugar seguro.
-2. En el proyecto, **SQL Editor → New query**, pegar todo `supabase/esquema.sql` y darle **Run**.
-3. En **Project Settings → API** (o **Connect**), copiar la **Project URL** y la clave pública
-   (**anon** o **publishable**) y ponerlas en `js/config.js`. Nunca la clave *service_role* o *secret*.
-
-Qué se puede hacer con la clave pública: leer reportes y agregar reportes nuevos, nada más. Nadie
-puede cambiarlos ni borrarlos desde la página; hay un límite de 60 reportes cada 10 minutos por
-teléfono contra el spam.
-
-Para esconder un reporte falso: en Supabase, **Table Editor → reportes**, poner `oculto` en
-`true`. En el plan gratis, un proyecto sin ninguna visita en 7 días se pausa; se reactiva desde el
-panel.
-
-## El mapa
-
-Leaflet (incluido en `vendor/leaflet`) es la librería que dibuja el mapa, pero no trae las calles:
-normalmente se le piden imágenes a un servidor de mosaicos, y esos servidores bloquean (OpenStreetMap
-rechaza páginas abiertas con doble clic), piden clave o cobran. Por eso el fondo (mar, costa,
-esteros, calles y sus nombres) lo dibuja la app con datos de OpenStreetMap guardados en
-`js/mapa-base.js`. No se hace ninguna petición a internet.
+3. Opcional: un captcha ligero (Cloudflare Turnstile) si llegara spam a pesar del límite por
+   teléfono, y un número de WhatsApp que reciba reportes ("sin agua obrera") con el mismo detector
+   de texto.
 
 ## Las colonias
 
