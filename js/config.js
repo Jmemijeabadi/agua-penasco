@@ -4,6 +4,6 @@
 // Lo que se puede hacer con ella lo limitan los permisos de supabase/esquema.sql: leer y agregar
 // reportes, nunca cambiarlos ni borrarlos. Nunca pongas aquí la clave "service_role" o "secret".
 window.AGUA_CONFIG = {
-  supabaseUrl: '',   // por ejemplo 'https://abcdefghijklmnop.supabase.co'
-  supabaseKey: '',
+  supabaseUrl: 'https://gbopetujkowpkadfgzam.supabase.co',
+  supabaseKey: 'sb_publishable_eeNNHLcS9svWgH5-j_GYEA_8TkpV0KQ',
 };

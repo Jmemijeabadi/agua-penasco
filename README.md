@@ -6,11 +6,16 @@ se pierden en llamadas y grupos de Facebook, y deja evidencia que se puede prese
 
 ## Abrirla
 
-Doble clic en `index.html`. No necesita internet: el mapa lo dibuja la propia app (ver abajo).
-También funciona con la extensión *Live Server* de VS Code.
+En internet: **https://jmemijeabadi.github.io/agua-penasco/**. En la computadora también abre con
+doble clic en `index.html` o con la extensión *Live Server* de VS Code.
 
-La primera vez aparecen **datos de ejemplo** (inventados, marcados como tales) para que se vea
-cómo funciona. El botón **Borrar ejemplos** los quita.
+El mapa no necesita internet: lo dibuja la propia app (ver *El mapa*). Los reportes sí: se guardan
+en la base compartida y todos ven lo mismo, así que lo que se reporte desde una copia local también
+llega a la base real.
+
+Para probar sin tocar los reportes reales, dejar vacíos los dos datos de `js/config.js`: la app
+guarda todo solo en ese navegador y muestra **datos de ejemplo** (inventados, marcados como tales),
+que se quitan con **Borrar ejemplos**.
 
 ## Qué hace
 
@@ -48,8 +53,7 @@ solo en uno o dos minutos.
 
 ## Lo que falta
 
-1. **Conectar la base de datos compartida** (ver abajo). El código ya está listo: solo hay que
-   crear el proyecto de Supabase y poner su dirección y clave pública en `js/config.js`.
+1. **Darla a conocer** en los grupos de Facebook y WhatsApp de las colonias (ver arriba).
 2. **Que alguien de Peñasco revise las colonias.** Están todas ubicadas (ver abajo), pero las de
    confianza "media" y los límites entre colonias vecinas conviene que los confirme alguien que
    conozca la ciudad. Se corrigen desde *Acerca → Colonias del mapa* y luego se reemplaza
@@ -57,6 +61,30 @@ solo en uno o dos minutos.
 3. Opcional: un captcha ligero (Cloudflare Turnstile) si llegara spam a pesar del límite por
    teléfono, y un número de WhatsApp que reciba reportes ("sin agua obrera") con el mismo detector
    de texto.
+
+## Base de datos compartida (Supabase)
+
+Los reportes se guardan en un proyecto de [Supabase](https://supabase.com) (plan gratis). Su
+dirección y su clave pública están en `js/config.js`; la tabla y sus permisos, en
+`supabase/esquema.sql`, que se corre una vez en **SQL Editor → New query → Run** (volver a correrlo
+no borra reportes).
+
+Qué se puede hacer con la clave pública: leer reportes y agregar reportes nuevos, nada más. Nadie
+puede cambiarlos, borrarlos ni ver de qué teléfono vienen; contra el spam hay un límite de 60
+reportes cada 10 minutos por teléfono y de 300 por minuto en total. La clave *service_role* o
+*secret* nunca va en la página.
+
+Para esconder un reporte falso: en Supabase, **Table Editor → reportes**, poner `oculto` en
+`true`. En el plan gratis, un proyecto sin ninguna visita en 7 días se pausa; se reactiva desde el
+panel de Supabase.
+
+## El mapa
+
+Leaflet (incluido en `vendor/leaflet`) es la librería que dibuja el mapa, pero no trae las calles:
+normalmente se le piden imágenes a un servidor de mosaicos, y esos servidores bloquean (OpenStreetMap
+rechaza páginas abiertas con doble clic), piden clave o cobran. Por eso el fondo (mar, costa,
+esteros, calles y sus nombres) lo dibuja la app con datos de OpenStreetMap guardados en
+`js/mapa-base.js`. Para el mapa no se hace ninguna petición a internet.
 
 ## Las colonias
 
@@ -87,7 +115,9 @@ del Mar). Todas tienen ubicación: 34 con confianza alta y 11 media.
 |---|---|
 | `index.html`, `css/estilos.css` | La página |
 | `js/app.js` | Pantallas, formulario, importación, historial y editor de colonias |
-| `js/almacen.js` | Dónde se guardan los reportes (lo que se cambia por una base de datos) |
+| `js/config.js` | Dirección y clave pública de la base compartida |
+| `js/almacen.js` | Dónde se guardan los reportes: la base compartida o, en modo de prueba, el navegador |
+| `supabase/esquema.sql` | Tabla de reportes y sus permisos (se corre en Supabase) |
 | `js/estado.js` | Reglas: qué color lleva cada colonia y cuántos días lleva sin agua |
 | `js/detector.js` | Lee texto de Facebook/WhatsApp y propone reportes |
 | `js/mapa.js`, `js/geo.js` | Mapa (Leaflet) y hexágonos por colonia |
