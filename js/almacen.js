@@ -89,6 +89,7 @@
     if (!res.ok) {
       const e = new Error((datos && (datos.message || datos.hint)) || `Error ${res.status}`);
       e.estado = res.status;
+      e.codigo = datos && datos.code;   // código de PostgreSQL o de la API (PGRST…)
       throw e;
     }
     return datos;
@@ -174,8 +175,9 @@
             avisar('Se mandaron muchos reportes seguidos desde este teléfono. Los que faltan se enviarán en unos minutos.');
             throw e;
           }
-          if (e.estado && e.estado < 500) {
-            // La base no los acepta (dato inválido): reintentar no serviría.
+          if (/^2[23]/.test(e.codigo || '')) {
+            // La base no los acepta por los datos (códigos 22… y 23… de PostgreSQL): reintentar no
+            // serviría. Cualquier otro problema (tabla que falta, permisos) se reintenta después.
             const quitar = new Set(lote);
             pendientes = pendientes.filter(p => !quitar.has(p));
             console.warn('La base rechazó reportes:', e.message);
